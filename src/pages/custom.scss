@@ -1,0 +1,48 @@
+
+.dish1 h3 {
+ font-style: italic;
+
+}
+.jum p{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.jum h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jum img{
+    width: 10em;
+    margin-right: 4rem;
+}
+
+.text{
+  float: left;
+}
+.pic{
+  display: inline-block
+}
+
+
+
+@import '~bootstrap/scss/bootstrap.scss';
+ 
+
+      
+  .gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  .gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
