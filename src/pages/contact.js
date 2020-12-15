@@ -2,6 +2,9 @@ import React, { useState }  from "react"
 import axios from "axios";
 import { Link } from "gatsby"
 import Layout from "../components/layout"
+import custom from '../pages/custom.scss'
+import Map from '../pages/Map.js'
+import Footer from "../components/footer";
 
 
 const Contact = () => {
@@ -38,8 +41,8 @@ const Contact = () => {
     return (
         <Layout>
     
-    <div>
-         <div className="col-md-8 mt-5">
+    <div className="form">
+         <div className=" form col-md-8 mt-5">
             <h3>Get in Touch</h3>
             <form action="https://getform.io/f/a5bd7840-377b-4857-934e-b058c13d4aad" onSubmit={handleOnSubmit}>
             <div className="form-group">
@@ -62,8 +65,9 @@ const Contact = () => {
             </form>
         </div>
       </div>  
-    
-  </Layout>
+        <Map />
+        <Footer />
+      </Layout>
      
     );
   };

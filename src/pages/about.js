@@ -12,6 +12,7 @@ const About = () =>{
          <p><Link to="/contact">Contact me</Link></p>
        
        </Layout>
+       
       
         
     )

@@ -1,0 +1,64 @@
+.container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightcyan;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 50px;
+
+}
+.title:hover{
+    text-decoration: none; 
+    font-weight: bold;
+}
+.title{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -17px;
+ 
+
+}
+
+.nav-list{
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        margin-right: -7rem;
+        position: relative;
+        top: -30px;
+}
+
+
+
+.nav-item{
+    color: #999999;
+    font-size: 1.5rem;
+    margin-right: 1.3rem;
+    text-decoration: none;
+    padding: 0.4rem;
+
+} 
+
+.nav-item:hover{
+    color: #666666;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.active-nav-item{
+    color: #333333;
+    text-decoration: none;
+}
+
+
+.menuIcon {
+    display: none;
+    text-decoration: none;
+  }
+
+
