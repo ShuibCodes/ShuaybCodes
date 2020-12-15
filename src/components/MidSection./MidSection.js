@@ -18,7 +18,7 @@ function MidSection() {
           </div>
           
     
-                <button className="cardBtn" > See For More Info --> </button>
+                <button className="cardBtn" > For More Info --> </button>
        
           
         </div>
