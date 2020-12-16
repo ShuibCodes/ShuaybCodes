@@ -1,16 +1,14 @@
 import React, { useState }  from "react"
 import axios from "axios";
 import { Link } from "gatsby"
-import Layout from "../components/layout"
 import custom from '../pages/custom.scss'
 import Map from '../pages/Map.js'
-import Footer from "../components/footer";
-
+import  FooterLayout from '../components/BlogLayout'
 
 const Contact = () => {
     
     const [serverState, setServerState] = useState({
-      submitting: false,
+      submitting: false, 
       status: null
     });
     const handleServerResponse = (ok, msg, form) => {
@@ -39,7 +37,7 @@ const Contact = () => {
         });
     };
     return (
-        <Layout>
+        <FooterLayout>
     
     <div className="form">
          <div className=" form col-md-8 mt-5">
@@ -66,8 +64,8 @@ const Contact = () => {
         </div>
       </div>  
         <Map />
-        <Footer />
-      </Layout>
+      
+      </FooterLayout>
      
     );
   };

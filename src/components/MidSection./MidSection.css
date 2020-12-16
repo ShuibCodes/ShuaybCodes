@@ -37,6 +37,9 @@ p
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
+  position: relative;
+  left: -5rem;
 }
 
 /* End Non-Essential  */
@@ -60,6 +63,7 @@ p
   overflow:hidden;
   -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
   box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
 
@@ -85,15 +89,17 @@ p
 .property-description
 {
   background-color: #FAFAFC;
-  height:25em;
+  height:23em;
   width:25em;
   position:absolute;
   bottom:0em;
+  
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 0.5em 1em;
   text-align:center;
+  
 }
 
 /* Social Icons */
@@ -116,7 +122,8 @@ p
 {
   height:30em;
   width: 30em;
-  padding:0px 1em;
+  padding:0px ;
+  padding-left: 0px;  
 }
 .property-card:hover .property-image
 {
@@ -132,4 +139,25 @@ p
 {
   background-color:blue;
   cursor:pointer;
+}
+
+.text{
+  
+}
+
+@media screen and (max-width: 786px){
+    .Flex-container{
+      display: block;
+    }
+
+    .property-card{
+       position: relative;
+       right: -5rem;
+    }
+
+      .property-description{
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+      }
 }

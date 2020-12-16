@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
-import Layout from '../components/layout'
+
 import blogStyles from './blog.module.scss'
+import FooterLayout from '../components/BlogLayout'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -20,8 +21,8 @@ const BlogPage = () => {
     `)
 
     return (
-        <Layout>
-            <h1>Recipes</h1>
+        <FooterLayout>
+                 <h1>Recipes</h1>
             <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
@@ -34,7 +35,9 @@ const BlogPage = () => {
                     )
                 })}
             </ol>
-        </Layout>
+        </FooterLayout>
+       
+        
     )
 }
 

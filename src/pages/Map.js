@@ -5,7 +5,7 @@ import PlacesAutocomplete, {
     getLatLng,
   } from 'react-places-autocomplete';
   import custom from '../pages/custom.scss'
-import Footer from '../components/footer';
+
 
   
   const mapStyles = {
@@ -66,7 +66,7 @@ export class MapContainer extends Component {
           />
    
         </Map>
-        <Footer />
+        
         </div>
 
     
