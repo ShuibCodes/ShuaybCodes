@@ -5,6 +5,7 @@ import {homeObjOne } from '../components/HeroSection/Data'
 // import HomeStyles from '../pages/Home.module.scss'
 import HeroSection from '../components/HeroSection/HeroSection'
 import MidSection from "../components/MidSection./MidSection"
+import ImgSection from "../components/ImageSection/ImgSection"
 // import Card2 from '../components/MidSection./Card2'
 
 
@@ -15,6 +16,7 @@ const Index = () =>{
     <Layout>
         <HeroSection {...homeObjOne} />
         <MidSection/>
+        <ImgSection/>
         {/* <Card2/> */}
 
 

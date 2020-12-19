@@ -38,7 +38,7 @@ const Footer = () =>{
               type='email'
               placeholder='Your Email'
             />
-            <Link to="/contact" ><button >Subscribe</button></Link>
+            <Link to="/contact" ><button className="sub-btn"  >Subscribe</button></Link>
           </form>
         </div>
       </section>

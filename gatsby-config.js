@@ -9,6 +9,8 @@ module.exports = {
         author: 'Recipes4You Ltd'
     },
     plugins: [
+        `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
+
         {
             resolve: 'gatsby-source-contentful',
             options: {
@@ -27,24 +29,7 @@ module.exports = {
                 
             }
         },
-        {
-            resolve: `gatsby-plugin-sharp`,
-           
-          },
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                plugins: [
-                    'gatsby-remark-relative-images',
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            maxWidth: 750,
-                            linkImagesToOriginal: false
-                        }
-                    }
-                ]
-            }
-        }
+            
     ]
+    
 }
