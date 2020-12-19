@@ -34,7 +34,7 @@ const ImgSection = () => {
    return(
        <>
        <div>
-           <h2 className="ImgTitle" >Images Go Here</h2>
+           <h2 className="ImgTitle" >Images Go Here:</h2>
        </div>
              <div className="image-container">
           
