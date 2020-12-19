@@ -50,7 +50,7 @@ const Footer = () =>{
               Title&Logo
             </Link>
           </div>
-          <small className='website-rights'>Title&Logo© 2020</small>
+          <small className='website-rights'>Title&Logo©  2020</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
