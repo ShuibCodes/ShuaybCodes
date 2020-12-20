@@ -1,6 +1,14 @@
 
 .Flex-container{
     display: flex;
+    justify-content: center;
+
+
+}
+
+.card1{
+  position: relative;
+  right: -5rem;
 }
 
 
@@ -88,11 +96,12 @@ p
 
 .property-description
 {
-  background-color: #FAFAFC;
+  background-color: #f2f2f2;
   height:23em;
   width:25em;
   position:absolute;
   bottom:0em;
+  border-radius: 3px;
   
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -106,17 +115,29 @@ p
 
 .cardBtn
 {
-  width: 7em;
-  height: 7em;
-  background-color:black;
+  width: 9em;
+  height: 3em;
+  background-color: lightblue;
   position:absolute;
   bottom:1em;
   left:1em;
-  color: #e1e1e3;
-}
+  color: black;
+  border-radius: 8px;
   
+}
+  h5{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+  }
+.card-text{
+  font-size: 20px;
+  padding: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /* Property Cards Hover States */
+
 
 .property-card:hover .property-description
 {
@@ -141,9 +162,6 @@ p
   cursor:pointer;
 }
 
-.text{
-  
-}
 
 @media screen and (max-width: 786px){
     .Flex-container{

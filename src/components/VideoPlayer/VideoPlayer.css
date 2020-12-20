@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    margin-left: 0.3rem;
+    
+    
+}
+@media screen and (max-width: 960px){
+    .container{
+      position: relative;
+      left: -2rem;
+    }
+  
+  }

@@ -9,6 +9,7 @@ import {
   } from 'react-icons/fa';
 import {AiTwotoneExperiment} from 'react-icons/ai'
 import './footer.css'
+import { IconContext } from 'react-icons';
 
 const Footer = () =>{
         const footerData = useStaticQuery(graphql`
@@ -57,8 +58,11 @@ const Footer = () =>{
               to='/'
               target='_blank'
               aria-label='Facebook'
-            >
+            > 
+              <IconContext.Provider value={{className:"size"}}>
               <FaFacebook />
+             </IconContext.Provider>
+             
             </Link>
             <Link
               className='social-icon-link'
@@ -66,7 +70,9 @@ const Footer = () =>{
               target='_blank'
               aria-label='Instagram'
             >
+               <IconContext.Provider value={{className:"size"}}>
               <FaInstagram />
+             </IconContext.Provider>
             </Link>
             <Link
               className='social-icon-link'
@@ -76,7 +82,9 @@ const Footer = () =>{
               target='_blank'
               aria-label='Youtube'
             >
+              <IconContext.Provider value={{className:"size"}}>
               <FaYoutube />
+             </IconContext.Provider>
             </Link>
             <Link
               className='social-icon-link'
@@ -84,7 +92,9 @@ const Footer = () =>{
               target='_blank'
               aria-label='Twitter'
             >
+              <IconContext.Provider value={{className:"size"}}>
               <FaTwitter />
+             </IconContext.Provider>
             </Link>
             <Link
               className='social-icon-link'
@@ -92,7 +102,9 @@ const Footer = () =>{
               target='_blank'
               aria-label='LinkedIn'
             >
+              <IconContext.Provider value={{className:"size"}}>
               <FaLinkedin />
+             </IconContext.Provider>
             </Link>
           </div>
         </div>
