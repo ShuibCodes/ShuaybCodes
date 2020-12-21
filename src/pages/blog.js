@@ -22,7 +22,7 @@ const BlogPage = () => {
     return (
         <FooterLayout>
         
-                 <h1>Blog Title Here</h1>
+                 <h1>Blog Title Here:</h1>
                 <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
