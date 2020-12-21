@@ -19,17 +19,15 @@ function MidSection() {
           <div class="property-description">
             <h5> Card Title </h5>
             <p className="card-text" >Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
-          </div>
-          
-
-                <button className="cardBtn" > For More Info </button>
-       
+          </div>       
           
         </div>
       </div>
         </div>
         
       <div class="center">
+        <div className="property-card2">
+
         <div class="property-card">
         <div className="text">
         <a href="#">
@@ -43,16 +41,13 @@ function MidSection() {
             <p className="card-text" >Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.  Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard. </p>
           </div>
         </div>
-         
-          
-          
-                <button className="cardBtn" > See For More Info</button>
-       
-          
         </div>
       </div>
      </div>
      
+
+        </div>
+       
 
        
        

@@ -179,3 +179,25 @@ p
         font-weight: 400;
       }
 }
+
+@media only screen and (max-width: 600px) {
+  .property-card{
+    width: 40vh;
+    position: relative;
+    left: -2rem;
+    margin-left: 2rem;
+  }
+
+   .property-card2{
+     width: 40vh;
+    margin-left: 8rem;
+    position: relative;
+    top: -9rem;
+   }
+
+   .center{
+     position: relative;
+     top: -4rem;
+     height: ;
+   }
+}

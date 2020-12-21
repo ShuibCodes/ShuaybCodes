@@ -8,17 +8,17 @@ function HeroSection({
 }) {
     return (
         <div className="hero-container">
-          <h1>Name Here</h1>
+          <h1>Website Title</h1>
           <div className="subheading">
                   <ul className="words">
-                        <li className="each-word"> Travel | </li>
-                        <li className="each-word"> Events | </li>
-                        <li className="each-word"> Portraits | </li>
+                        <li className="each-word"> | Extract | </li>
+                        <li className="each-word"> Brew | </li>
+                        <li className="each-word"> Enjoy | </li>
                   </ul>
                 </div>
           <div className="hero-btns">
            <Link to="/about" >
-                <button>Click me</button>
+                <button >Click me</button>
            </Link> 
           </div>
     
