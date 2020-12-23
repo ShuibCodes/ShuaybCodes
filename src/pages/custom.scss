@@ -1,0 +1,92 @@
+.form{
+    margin-left: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+  padding-right: 4rem;
+
+}
+
+ .title{
+   display: inline;
+   margin-left: 7rem;
+   position: relative;
+   top: -5rem;
+   left: 10rem;
+   white-space: nowrap;
+   
+}
+
+label{
+    font-size: 20px;
+    
+}
+
+.form-group{
+    width: 550px;
+}
+
+
+.maps{
+  padding: 2rem;
+margin: 0 auto;
+
+
+}
+
+
+.contact-details p{
+  font-size: 27px;
+  white-space: nowrap;
+  
+}
+
+.prompt{
+  font-size: 27;
+  white-space: nowrap;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+// .background{
+//   background-color: lightblue;
+//   height: 400px;
+// }
+
+.contact-container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 2rem;
+    left: 6rem;
+    // border: 0.5rem solid lightblue ;
+    width: 600px
+
+  }
+
+  
+ 
+
+  @media screen and (max-width: 960px){
+    .form{
+      display: block;
+      margin: 0 auto;
+    }
+    .form-group{
+      width: 320px;
+    }
+    .title{
+      display: inline;
+      top: 0rem;
+      left: -2rem;
+      
+    }
+
+
+    .maps{
+      display: block;
+      margin-top: 7rem;
+    }
+
+  }

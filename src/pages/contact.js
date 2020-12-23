@@ -38,10 +38,10 @@ const Contact = () => {
     };
     return (
         <FooterLayout>
-    
+    <div className="background">
     <div className="form">
          <div className=" form col-md-8 mt-5">
-            <h3>Get in Touch</h3>
+            <h3 className="title" >Get in Touch</h3>
             <form action="https://getform.io/f/a5bd7840-377b-4857-934e-b058c13d4aad" onSubmit={handleOnSubmit}>
             <div className="form-group">
                 <label for="exampleInputEmail1" required="required">Email address</label>
@@ -62,8 +62,18 @@ const Contact = () => {
             )}
             </form>
         </div>
-        
+        <div className="contact-container">
+          <div className="contact-details">
+               <p> <span className="prompt" >Address: </span>200 Smiths Close , London, N22 5FL </p>
+                <p><span className="prompt" >Telephone: </span>0208115563 </p>
+                <p><span className="prompt" >FAX: </span>0300554977 </p>
+                <p><span className="prompt" >Email: </span>info@example.co.uk</p>
+                <p><span className="prompt" >PO Box </span>P.O.Box 124, Lords Lane 211a </p>
+          </div>
+        </div>
       </div>  
+    </div>
+   
         <Map />
       
       </FooterLayout>

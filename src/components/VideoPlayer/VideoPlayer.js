@@ -4,8 +4,8 @@ import ReactPlayer from 'react-player'
 
 function VideoPlayer() {
     return (
-        <div className="container" >
-            <ReactPlayer width="900px" height="500px" controls className="video" url='https://www.youtube.com/watch?v=SQIbeAk-bFA&ab_channel=Apple' />
+        <div className="iframe-container" >
+           <iframe width="900" height="500" src="https://www.youtube.com/embed/cnXapYkboRQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     )
 }

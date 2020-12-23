@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Map,Marker,GoogleApiWrapper} from 'google-maps-react';
+import './custom.scss'
 import PlacesAutocomplete, {
     geocodeByAddress,
     getLatLng,
@@ -14,6 +15,7 @@ import PlacesAutocomplete, {
 
   };
   
+
 
 export class MapContainer extends Component {
     state = {
