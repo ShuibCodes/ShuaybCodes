@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    width: 100%;
     
    
   }
@@ -29,6 +29,7 @@
   .footer-subscription > p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
+      font-size: 26px;
   }
   
   .footer-subscription-heading {

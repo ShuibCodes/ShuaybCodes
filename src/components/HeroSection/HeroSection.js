@@ -3,9 +3,18 @@ import './HeroSection.css'
 import {Link} from 'gatsby'
 
 
-function HeroSection({
-   
-}) {
+
+
+const HeroSection = () => {
+
+
+  const  handleClick =  () =>{
+    console.log("clicked")
+  }
+
+
+
+
     return (
         <div className="hero-container">
           <h1>Website Title</h1>
@@ -17,13 +26,13 @@ function HeroSection({
                   </ul>
                 </div>
           <div className="hero-btns">
-           <Link to="/about" >
-                <button >Click me</button>
-           </Link> 
+           {/* <Link to="/about" > */}
+                <button onClick={handleClick} >Click me</button>
+           {/* </Link>  */}
           </div>
     
         </div>
       )
-}
 
+    }
 export default HeroSection
