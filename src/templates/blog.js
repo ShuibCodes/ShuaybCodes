@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import {Button} from 'react-bootstrap'
+import {StyledLink, BlogLayout, Styledh1, Styledp} from '../components/ButtonElements'
 import FooterLayout from "../components/BlogLayout"
 
 
@@ -34,10 +34,13 @@ const Blog = props => {
 
   return (
     <FooterLayout>
-      <Button variant="outline-info" ><Link to="/blog" >Back</Link> </Button>
-      <h1 className="this">{props.data.contentfulBlogPost.title}</h1>
-      <p>{props.data.contentfulBlogPost. publishedDate}</p>
+      <StyledLink to="/blog"> Back </StyledLink>
+      <BlogLayout>
+      <Styledh1 className="this">{props.data.contentfulBlogPost.title}</Styledh1>
+      <Styledp>{props.data.contentfulBlogPost. publishedDate}</Styledp>
       {documentToReactComponents(props.data.contentfulBlogPost.body.json,options)}
+      </BlogLayout>
+  
     </FooterLayout>
       
      

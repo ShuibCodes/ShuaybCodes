@@ -5,13 +5,15 @@ import PlacesAutocomplete, {
     geocodeByAddress,
     getLatLng,
   } from 'react-places-autocomplete';
-  import custom from '../pages/custom.scss'
+  
+import { FaAutoprefixer } from 'react-icons/fa';
 
 
   
   const mapStyles = {
-    width: '50%',
+    width: '80%',
     height: '47%',
+    
 
   };
   

@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+.title{
+  font-family: 'Roboto Slab', serif;
+}
+
+.text{
+  background-color:lightblue;
+  padding: 25px;
+ 
+  border: 1px solid lightblue;
+  border-radius: 18px;
+ height: 350px;
+  width: 300px;
+  
+}
+
+img{
+  max-width: 400px;
+  max-height: 100%;
+  margin: 5px 0px 10px -10px
+
+}
+
 
 h1{
     text-align: center;
@@ -11,26 +35,31 @@ h1{
     list-style-type: none;
     margin: 0;
     width: 50%;
-    margin-left: 20rem;
+    margin: 0 auto;
     padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 9rem;
+    position: relative;
+    
+    
 
   }
   
   .post {
-    margin: 1rem 0;
+    margin: 0 auto;
+    margin-left: -9rem;
+    
   
     a {
-        background-color: lightcyan;
+        
       color: #000000;
-      display: block;
+      display: flex;
       padding: 1rem;
       text-decoration: none;
     }
   
-    a:hover {
-      background-color: lightblue;
-    }
-  
+   
     h2 {
       margin-bottom: 0;
     }
@@ -53,8 +82,15 @@ h1{
     }
 }
 // General responsiveness 
-@media screen and (max-width: 870px){
+@media screen and (max-width: 980px){
   .post{
      margin-left: -20rem;
+  }
+
+  .posts{
+    display: block;
+    margin-left: 20rem;
+    padding: 30px;
+    
   }
 }
