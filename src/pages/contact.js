@@ -68,7 +68,7 @@ const Contact = () => {
                 <p><span className="prompt" >Telephone: </span>0208115563 </p>
                 <p><span className="prompt" >FAX: </span>0300554977 </p>
                 <p><span className="prompt" >Email: </span>info@example.co.uk</p>
-                <p><span className="prompt" >PO Box </span>P.O.Box 124, Lords Lane 211a </p>
+                <p><span className="prompt" >PO Box </span>P.O.Box 124, Lords Lane 211b </p>
           </div>
         </div>
       </div>  
