@@ -34,7 +34,7 @@ const ImgSection = () => {
    return(
        <>
        <div>
-           <h2 className="ImgTitle" >Images Go Here:</h2>
+           <h2 className="ImgTitle" >Join Our Growing Community!</h2>
        </div>
              <div className="image-container">
           
@@ -45,6 +45,9 @@ const ImgSection = () => {
                   className="image-item"
                   fluid={image.node.childImageSharp.fluid}
                   alt={image.node.base.split(".")[0]}
+                style={{ margin: '0.5rem', maxHeight: 'calc(50vh - 4rem)' }}
+                  
+
                   />
               ))}
           </div>

@@ -1,14 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'); 
 
 .Flex-container{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0
 
+}
 
+/* .header-container{
+
+} */
+.header{
+  position: relative;
+  bottom: -15rem;
+ color: black;
+  white-space: nowrap;
+  font-size: 70px;
+  margin: 10px;
+  padding: 2rem 0 2rem 0;
 }
 
 .card1{
   position: relative;
   right: -5rem;
+  margin-left: -2rem;
 }
 
 
@@ -25,12 +40,11 @@ body
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-h5
-{
+.main-title{
   margin:0px;
-  font-size:1.4em;
-  font-weight:700;
+  font-size: 40px;
+  font-family: 'Roboto Slab', serif;
+  margin-top: 10px;
 }
 
 p
@@ -41,7 +55,7 @@ p
 .center
 {
   height:100vh;
-  width:100%;
+  widows: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,10 +66,16 @@ p
 
 /* End Non-Essential  */
 
+.property-card3{
+  margin-left: -4rem;
+}
+
+
 .property-card
 {
-  height:30em;
-  width: 30em;
+  
+  height:25em;
+  width: 25em;
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -93,12 +113,22 @@ p
 }
 
 /* Bottom Card Section */
+.price{
+  display: block;
+  padding: 10px 0 10px 0;
+  align-items: center;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightcoral;
+  margin: 7px 0 7px 0;
+}
+
 
 .property-description
-{
-  background-color: #f2f2f2;
-  height:23em;
-  width:25em;
+  {
+  background-color: #a9cbd1;
+  height:100%;
+  width: 100%;
   position:absolute;
   bottom:0em;
   border-radius: 3px;
@@ -106,25 +136,12 @@ p
   -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 0.5em 1em;
+  padding: -3em 1em;
   text-align:center;
   
 }
 
-/* Social Icons */
-
-.cardBtn
-{
-  width: 9em;
-  height: 3em;
-  background-color: lightblue;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  color: black;
-  border-radius: 8px;
-  
-}
+/* Tittle and text*/
   h5{
     font-size: 35px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -132,36 +149,45 @@ p
   }
 .card-text{
   font-size: 20px;
-  padding: 2rem;
+  padding: 1rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Property Cards Hover States */
+/* Buttons */
+.example_a {
+  color: black !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #12e9e9;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  font-weight: 500;
+  margin-top: -2rem;
+  }
+  
+  .example_a:hover {
+   
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: lightcoral;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
 
 
-.property-card:hover .property-description
-{
-  height:30em;
-  width: 30em;
-  padding:0px ;
-  padding-left: 0px;  
+
+
+.card-para{
+  font-size: 15px;
+  padding: 2rem;
+  padding-top: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.property-card:hover .property-image
-{
-  height:18em;
-}
-
-.property-card:hover .property-social-icons
-{
-  background-color:white;
-}
-
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}
-
 
 @media screen and (max-width: 786px){
     .Flex-container{
@@ -198,6 +224,6 @@ p
    .center{
      position: relative;
      top: -4rem;
-     height: ;
+   
    }
 }

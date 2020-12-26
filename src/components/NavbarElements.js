@@ -1,12 +1,12 @@
 import { Link } from "gatsby"
-import {MdShoppingCart} from 'react-icons/md'
+import {GiHighKick} from 'react-icons/gi'
 import styled from "styled-components"
 
 
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
-      ? "#fff"
+      ? "#12e9e9"
       : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
   height: 80px;
   display: flex;
@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#e0ffff" : "#e0ffff")};
+    background: ${({ click }) => (click ? "#12e9e9" : "#12e9e9")};
     transition: 0.8s all ease;
   }
 `
@@ -51,10 +51,11 @@ export const NavLogo = styled(Link)`
 
 `
 
-export const NavIcon = styled(MdShoppingCart)`
+export const NavIcon = styled(GiHighKick)`
   margin: 0 0.5rem 0 2rem;
-  height: 5rem;
-  width: 3rem;
+  
+  height: 4rem;
+  width: 6rem;
   position: relative;
   left: -0.5em;
 `

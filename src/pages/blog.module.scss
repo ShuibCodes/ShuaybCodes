@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+.background{
+  background: url("./Background-Img/blits.jpg") center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
 
-.title{
+}
+ 
+
+
+.Maintitle{
   font-family: 'Roboto Slab', serif;
+  color: white;
 }
 
 .text{
@@ -93,4 +102,11 @@ h1{
     padding: 30px;
     
   }
+
+  .background{
+    background: url("./Background-Img/blits.jpg") center center/cover no-repeat;
+    height: 200vh;
+    width: 100%;
+  }
+  
 }
