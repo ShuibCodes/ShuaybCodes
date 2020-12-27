@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
+import {Helmet} from 'react-helmet'
 import {
   MobileIcon,
   Nav,
@@ -12,6 +13,7 @@ import {
   NavMenu,
   NavLinks
 } from "../components/NavbarElements"
+
 
 const Header = () => {
   const [click, setClick] = useState(false)
@@ -35,7 +37,9 @@ const Header = () => {
 
   return (
     <>
+    
       <IconContext.Provider value={{ color: "#141414" }}>
+     
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
@@ -47,13 +51,13 @@ const Header = () => {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/"> Home </NavLinks>
+                <NavLinks to="/"> Home </NavLinks> 
               </NavItem>
               <NavItem>
-                <NavLinks to="/blog" > Blog </NavLinks>
+                <NavLinks to="/about" > About</NavLinks>
               </NavItem>
               <NavItem>
-              <NavLinks to="/about" > About </NavLinks>
+              <NavLinks to="/blog" > Blog</NavLinks>
               </NavItem>
               <NavItem>
               <NavLinks to="/contact" > Contact </NavLinks>

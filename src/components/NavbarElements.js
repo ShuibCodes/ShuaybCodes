@@ -3,6 +3,7 @@ import {GiHighKick} from 'react-icons/gi'
 import styled from "styled-components"
 
 
+
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
@@ -96,7 +97,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
-
+  
   @media screen and (max-width: 960px) {
     width: 100%;
     
@@ -104,17 +105,24 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
   color: #141414;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  font-family: 'Chelsea Market',sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: italic;
   text-decoration: none;
-  font-size: 26px;
-
+  margin-top:10px;
+  font-size: 30px;
+  &:hover {
+      color: darkred;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
 
 
   @media screen and (max-width: 960px) {
