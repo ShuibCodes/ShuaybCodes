@@ -21,7 +21,23 @@
   border-radius: 18px;
  height: 350px;
   width: 300px;
+  position: relative;
   
+}
+
+.text span{
+  position: absolute;
+  font-size: 25px;
+  bottom: 0;
+  padding: 1rem;
+  font-family: fantasy;
+  font-weight: 700;
+
+
+}
+
+.text span:hover{
+  color: red;
 }
 
 img{

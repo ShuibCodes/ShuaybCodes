@@ -2,7 +2,8 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import blogStyles from './blog.module.scss'
 import FooterLayout from '../components/BlogLayout'
-// import img from '../images/blog.jpg'
+import {BiRightArrowAlt} from 'react-icons/bi'
+
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -31,9 +32,10 @@ const BlogPage = () => {
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.slug}`}>
                                 <div className={blogStyles.text}>
-                                {/* <img className="blogImg"  src={img} alt="img" ></img> */}
+                               
                                     <h2 className={blogStyles.title} >{edge.node.title}</h2>
                                     <p className={blogStyles.para} >{edge.node.publishedDate}</p>
+                                    <span> Read More <BiRightArrowAlt/> </span>  
                                 </div>
                             </Link>
                         </li>
