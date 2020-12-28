@@ -15,7 +15,7 @@ import Head from '../components/head'
 const Index = () =>{
   return(
     <Layout>
-      <Head title="Home" />
+      <Head title="Home " />
         <HeroSection {...homeObjOne} />
         <MidSection/>
         <ImgSection/>
