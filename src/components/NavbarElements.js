@@ -43,12 +43,16 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
   display: flex;
   align-items: center;
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
+
+  &:hover{
+    text-decoration: none;
+  }
 
 `
 

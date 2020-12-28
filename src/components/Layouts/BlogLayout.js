@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './Header'
+import Header from '../Header'
 
 import '../styles/index.scss'
-import LayoutStyles from './layout.module.scss'
+import LayoutStyles from '../Layouts/layout.module.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

@@ -3,7 +3,8 @@ import axios from "axios";
 import { Link } from "gatsby"
 import custom from '../pages/custom.scss'
 import Map from '../pages/Map.js'
-import  FooterLayout from '../components/BlogLayout'
+import  FooterLayout from '../components/Layouts/BlogLayout'
+import {Helmet} from 'react-helmet'
 
 const Contact = () => {
     
@@ -38,6 +39,7 @@ const Contact = () => {
     };
     return (
         <FooterLayout>
+        <Helmet title="Contact" />
     <div className="background">
     <div className="form">
          <div className=" form col-md-8 mt-5">

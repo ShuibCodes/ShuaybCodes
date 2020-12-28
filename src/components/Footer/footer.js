@@ -8,7 +8,7 @@ import {
     FaLinkedin
   } from 'react-icons/fa';
 import {AiTwotoneExperiment} from 'react-icons/ai'
-import './footer.css'
+import '../Footer/footer.css'
 import { IconContext } from 'react-icons';
 
 const Footer = () =>{

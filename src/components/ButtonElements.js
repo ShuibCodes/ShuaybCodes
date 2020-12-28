@@ -21,13 +21,12 @@ font-weight: 500;
 
 
 export const BlogLayout = styled.div`
-    text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    /* text-align: center; */
+    padding: 0 40px 0 40px;
     font-family: sans-serif;
     font-size: 20px;
     display: inline-block;
-
+    
 
 `
 

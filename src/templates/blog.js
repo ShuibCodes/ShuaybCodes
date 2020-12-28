@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/Layouts/layout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import {StyledLink, BlogLayout, Styledh1, Styledp} from '../components/ButtonElements'
-import FooterLayout from "../components/BlogLayout"
-
+import FooterLayout from "../components/Layouts/BlogLayout"
+import {Helmet} from 'react-helmet'
 
 export const query = graphql`
   query($slug: String!) {
@@ -34,6 +34,7 @@ const Blog = props => {
 
   return (
     <FooterLayout>
+    <Helmet title="Blog Post" />
       <StyledLink to="/blog"> Back </StyledLink>
       <BlogLayout>
       <Styledh1 className="this">{props.data.contentfulBlogPost.title}</Styledh1>

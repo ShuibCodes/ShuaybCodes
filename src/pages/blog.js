@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import blogStyles from './blog.module.scss'
-import FooterLayout from '../components/BlogLayout'
+import FooterLayout from '../components/Layouts/BlogLayout'
 import {BiRightArrowAlt} from 'react-icons/bi'
-
+import {Helmet} from 'react-helmet'
 
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
@@ -22,6 +22,7 @@ const BlogPage = () => {
 
     return (
         <FooterLayout >
+        <Helmet title="Blog" />
             <div className={blogStyles.background} >   
             <h1 className={blogStyles.Maintitle} >Blog Articles:</h1>
              <ol className={blogStyles.posts}>

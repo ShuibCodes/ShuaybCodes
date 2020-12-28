@@ -18,7 +18,15 @@
     
   }
 
-
+  .header{
+    position: relative;
+    bottom: -13rem;
+   color: black;
+    white-space: nowrap;
+    font-size: 70px;
+    margin: 10px;
+    padding: 1rem 0 1rem 0;
+  }
   
   .labels{
     /* color: #fff; */

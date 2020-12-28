@@ -28,8 +28,10 @@
     "gatsby": "^2.25.3",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-sass": "^2.4.2",
     "gatsby-plugin-sharp": "^2.11.1",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-remark-images": "^3.5.1",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-contentful": "^2.0.47",
@@ -47,6 +49,7 @@
     "react-places-autocomplete": "^7.3.0",
     "react-player": "^2.7.2",
     "react-responsive-carousel": "^3.2.10",
+    "react-scroll": "^1.8.1",
     "sharp": "^0.26.3",
     "styled-components": "^5.2.1"
   },

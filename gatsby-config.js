@@ -5,11 +5,13 @@ require("dotenv").config({
 })
 module.exports = {
     siteMetadata: {
-        title: 'Recipes4You',
-        author: 'Recipes4You Ltd'
+        title: 'Wing Chun Academy',
+        author: 'Shuib Abdillahi'
     },
     plugins: [
-        `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
+      
+
+        'gatsby-plugin-react-helmet',`gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
 
         {
             resolve: 'gatsby-source-contentful',
