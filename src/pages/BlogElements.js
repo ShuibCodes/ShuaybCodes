@@ -1,6 +1,5 @@
-import React from 'react';
+
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 
 
@@ -13,21 +12,6 @@ export const StyledBox = styled.li`
     width: 500px;
     background-color: lightblue;
     float: left
-
-`
-
-// export const Styledli = styled.li`
-//     flex: 1;
-//     border: 1px solid red;
-
-// `
-
-
-export const Container = styled.ol`
-        
-    
-   
- 
 
 `
 

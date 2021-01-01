@@ -1,12 +1,6 @@
 import React, {Component} from 'react'
 import {Map,Marker,GoogleApiWrapper} from 'google-maps-react';
 import './custom.scss'
-import PlacesAutocomplete, {
-    geocodeByAddress,
-    getLatLng,
-  } from 'react-places-autocomplete';
-  
-import { FaAutoprefixer } from 'react-icons/fa';
 
 
   

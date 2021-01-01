@@ -1,9 +1,6 @@
-
 import './HeroSection.css'
-// import { Link } from "gatsby";
 import {Link} from 'react-scroll'
 import React, { Component } from 'react';
-import { format } from 'prettier';
 
 
 class HeroSection extends Component {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql,useStaticQuery, Link } from 'gatsby'
+import { Link } from 'gatsby'
 import {
     FaFacebook,
     FaInstagram,
@@ -12,15 +12,15 @@ import '../Footer/footer.css'
 import { IconContext } from 'react-icons';
 
 const Footer = () =>{
-        const footerData = useStaticQuery(graphql`
-            query{
-                site{
-                    siteMetadata{
-                        author
-                    }
-                }
-            }
-        `)
+        // const footerData = useStaticQuery(graphql`
+        //     query{
+        //         site{
+        //             siteMetadata{
+        //                 author
+        //             }
+        //         }
+        //     }
+        // `)
 
     return(
         <div className='footer-container'>

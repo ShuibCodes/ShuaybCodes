@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { IconContext } from "react-icons/lib"
-import {Helmet} from 'react-helmet'
+
 import {
   MobileIcon,
   Nav,

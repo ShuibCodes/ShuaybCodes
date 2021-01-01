@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/Layouts/layout'
 import './aboutStyles.css'
 import VideoPlayer from '../components/VideoPlayer/VideoPlayer'

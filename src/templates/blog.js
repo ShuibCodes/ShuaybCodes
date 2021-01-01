@@ -1,6 +1,4 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/Layouts/layout"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import {StyledLink, BlogLayout, Styledh1, Styledp} from '../components/ButtonElements'
 import FooterLayout from "../components/Layouts/BlogLayout"
@@ -38,7 +36,7 @@ const Blog = props => {
       <StyledLink to="/blog"> Back </StyledLink>
       <BlogLayout>
       <Styledh1 className="this">{props.data.contentfulBlogPost.title}</Styledh1>
-      <Styledp>{props.data.contentfulBlogPost. publishedDate}</Styledp>
+      <Styledp>{props.data.contentfulBlogPost.publishedDate}</Styledp>
       {documentToReactComponents(props.data.contentfulBlogPost.body.json,options)}
       </BlogLayout>
   
