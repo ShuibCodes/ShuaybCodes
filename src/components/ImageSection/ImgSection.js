@@ -45,7 +45,7 @@ const ImgSection = () => {
                   className="image-item"
                   fluid={image.node.childImageSharp.fluid}
                   alt={image.node.base.split(".")[0]}
-                // style={{ margin: '0.5rem', maxHeight: 'calc(50vh - 4rem)' }}
+                style={{ margin: '0.5rem', maxHeight: 'calc(50vh - 4rem) padding:-1rem' }}
                   
 
                   />
