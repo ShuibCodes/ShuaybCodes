@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap'); 
 
-.Flex-container{
+.Grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0
+    padding: 0;
+    margin-top: 5rem;
 
 }
 
@@ -68,21 +69,11 @@ p
   
   height:25em;
   width: 25em;
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -ms-flex-direction:column;
-  flex-direction:column;
   position:relative;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius:16px;
   overflow:hidden;
-  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  
 
 }
 /* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
@@ -184,41 +175,35 @@ p
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (max-width: 786px){
-    .Flex-container{
+@media screen and (max-width: 960px){
+    .Grid-container{
       display: block;
     }
+    #card1{
+      position: relative;
+      bottom: -5rem;
+    }
+    #card2{
+      position: relative;
+      top: -8rem;
+      left: 4rem;
+      display: block;
 
-    .property-card{
-       position: relative;
-       right: -5rem;
     }
 
-      .property-description{
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-weight: 400;
-      }
+    .card-text{
+      overflow: hidden;
+    }
+
+    .Grid-container{
+      margin-top: -6rem;
+    }
+
+    #card3{
+      position: relative;
+      top: -21rem;
+      left: 6rem
+    }
+
 }
 
-@media only screen and (max-width: 600px) {
-  .property-card{
-    width: 40vh;
-    position: relative;
-    left: -2rem;
-    margin-left: 2rem;
-  }
-
-   .property-card2{
-     width: 40vh;
-    margin-left: 8rem;
-    position: relative;
-    top: -9rem;
-   }
-
-   .center{
-     position: relative;
-     top: -4rem;
-   
-   }
-}

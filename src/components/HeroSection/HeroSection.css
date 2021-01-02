@@ -20,7 +20,7 @@
 
   .header{
     position: relative;
-    bottom: -13rem;
+    bottom: -17rem;
    color: black;
     white-space: nowrap;
     font-size: 70px;
@@ -103,7 +103,9 @@
       font-size: 30px;
     }
 
-
+    .header{
+      font-size: 35px;
+    }
 
     .words{
       font-family: 'Kalam', cursive;

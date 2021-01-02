@@ -1,4 +1,9 @@
 
+.form-control{
+  width: 450px;
+
+}
+
 
 .form{
     margin-left: -7rem;
@@ -32,8 +37,8 @@ label{
 .maps{
   padding: 2rem;
 margin: 0 auto;
-
-
+margin-top: 100px;
+margin-left: 50px;
 }
 
 
@@ -91,6 +96,17 @@ margin: 0 auto;
     
     }
 
+    .maps{
+      padding: 2rem;
+      margin-left: 0;
+      
+    }
+
+    body{
+      overflow-y: hidden;
+      margin: 0px;
+    padding: 0px;
     
+    }
 
   }

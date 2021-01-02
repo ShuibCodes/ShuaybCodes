@@ -74,7 +74,21 @@
 
   @media screen and (max-width: 760px){
       .image-grid{
-        justify-content: center       ;
+        margin-left: 3rem;
       }
+
+      .ImgTitle{
+       
+        margin-top: -25rem;
+    }
+    img{
+      max-width: 50%;
+     
+    }
+
+    .image-item{
+      width: 850px;
+    height: 550px;
+    }
   }
 

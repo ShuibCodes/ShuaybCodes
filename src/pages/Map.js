@@ -5,8 +5,8 @@ import './custom.scss'
 
   
   const mapStyles = {
-    width: '80%',
-    height: '47%',
+    width: '90%',
+    height: '70%',
     
 
   };

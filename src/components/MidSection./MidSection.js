@@ -8,14 +8,14 @@ class MidSection extends Component {
     
     render() {
         return (
-            <div className="Flex-container" id="MidSection">
+            <div className="Grid-container" id="MidSection">
       
             <div class="center">
             <div className="header-container">
          
             </div>
             <div className="card1">
-            <div class="property-card">
+            <div class="property-card" id="card1">
              
               <div class="property-description">
                 <h5 className="main-title" >Ultimate</h5>
@@ -25,23 +25,19 @@ class MidSection extends Component {
                 <Link to="/contact" ><div class="button_cont" align="center"><a href="/contact" class="example_a" target="_blank" rel="nofollow noopener">Join Today</a></div> </Link> 
                     
               </div>       
-              
             </div>
           </div>
             </div>
             
           <div class="center">
-            <div className="property-card">
-    
-            <div class="property-card">
+            <div className="property-card" id="card2">
             <div className="text">
             <a href="/contact" >
-                <div class="property-image">
+                <div class="property-image" >
                   <div class="property-image-title">
-                  
                   </div>
                 </div></a>
-              <div class="property-description">
+              <div class="property-description"  >
               <h5 className="main-title" >Accelerator</h5>
                 <span> <IconContext.Provider value={{className:"size"}} > <BsStarHalf/> </IconContext.Provider></span>
                 <span  className="price"> £20</span>
@@ -55,12 +51,12 @@ class MidSection extends Component {
     
               </div>
             </div>
-            </div>
+            
           </div>
           
          </div>
          <div class="center">
-            <div className="property-card3">
+            <div className="property-card3" id="card3" >
     
             <div class="property-card">
             <div className="text">
