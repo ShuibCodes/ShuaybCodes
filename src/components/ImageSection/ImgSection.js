@@ -1,7 +1,7 @@
 import React from "react"
+import "./ImgSection.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import "./ImgSection.css"
 
 
 
@@ -33,6 +33,7 @@ const ImgSection = () => {
      // map through images and return 
    return(
        <>
+       
        <div>
            <h2 className="ImgTitle" >Join Our Growing Community!</h2>
        </div>
@@ -45,8 +46,8 @@ const ImgSection = () => {
                   className="image-item"
                   fluid={image.node.childImageSharp.fluid}
                   alt={image.node.base.split(".")[0]}
-                // style={{ margin: '0.5rem', maxHeight: 'calc(50vh - 4rem) padding:-1rem' }}
-                  
+                
+                        
 
                   />
               ))}

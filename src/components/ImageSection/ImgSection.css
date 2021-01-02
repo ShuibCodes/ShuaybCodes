@@ -55,14 +55,19 @@
     border-radius: 5px;
     width: 800px;
     height: 450px;
-  
+    border-radius: 10px;
+    padding: 50px;    
   }
  
 
   Img{
     border-radius: 10px;
-   padding: 50px;
-   
+   padding: 50px;    
+  
+  }
+
+  img{
+    max-width: 50%;
   }
 
   @media screen and (max-width: 760px){
