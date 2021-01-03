@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-  
+ 
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "#12e9e9" : "#12e9e9")};
@@ -32,7 +32,12 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
+  margin-left: 45rem;
 
+  @media screen and (max-width:780px){
+    margin-left: -3rem;
+ 
+  }
 
 `
 
@@ -47,20 +52,28 @@ export const NavLogo = styled(Link)`
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
-
+  margin-left: -33rem;
   &:hover{
     text-decoration: none;
+  }
+
+  @media screen and (max-width: 960px){
+    margin-left: 7rem; 
+    font-size:45px;
   }
 
 `
 
 export const NavIcon = styled(GiHighKick)`
   margin: 0 0.5rem 0 2rem;
-  
+  margin-left: -10rem;
   height: 4rem;
   width: 6rem;
   position: relative;
   left: -0.5em;
+  @media screen and (max-width: 960px){
+   display: none;
+  }
 `
 
 export const MobileIcon = styled.div`
@@ -82,7 +95,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  
+   
   
 
   @media screen and (max-width: 960px) {
