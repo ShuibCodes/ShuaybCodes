@@ -32,8 +32,6 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   max-width: 1000px;
-  position: sticky;
-  
 
 
 `
@@ -84,6 +82,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  
+  
 
   @media screen and (max-width: 960px) {
     display: flex;
@@ -101,6 +101,7 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+  
   
   @media screen and (max-width: 960px) {
     width: 100%;
