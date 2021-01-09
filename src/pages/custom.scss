@@ -3,11 +3,19 @@
   width: 450px;
 
 }
-
+.message{
+  width: 450px;
+  height: 100px;
+  display: block;
+}
+.contact-container{
+  float: right;
+  margin-top: -20rem;
+}
 
 .form{
-    margin-left: -7rem;
-    display: grid;
+  
+    display: block;
     grid-template-columns: 1fr 1fr;
     margin-top: 5rem;
   padding-right: 4rem;
@@ -56,19 +64,9 @@ margin-left: 50px;
 }
 
 
-.contact-container{
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    top: 2rem;
-    left: 6rem;
 
-    width: 600px
 
-  }
-
-  
+ 
  
 
   @media screen and (max-width: 960px){
@@ -87,8 +85,9 @@ margin-left: 50px;
     }
 
     .contact-container{
-      left: 10px;
-     
+      display: block;
+      margin: 0 auto;
+      justify-content: center;
     }
 
     .contact-details p{
@@ -97,16 +96,9 @@ margin-left: 50px;
     }
 
     .maps{
-      padding: 2rem;
-      margin-left: 0;
-      
-    }
+      display: none;
+    } 
 
-    body{
-      overflow-y: hidden;
-      margin: 0px;
-    padding: 0px;
-    
-    }
+
 
   }

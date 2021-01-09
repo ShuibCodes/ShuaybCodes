@@ -45,13 +45,14 @@ const Contact = () => {
             <h3 className="title" >Get in Touch</h3>
             <form action="https://getform.io/f/a5bd7840-377b-4857-934e-b058c13d4aad" onSubmit={handleOnSubmit}>
             <div className="form-group">
-                <label for="exampleInputEmail1" required="required">Email address   <input type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/></label>
-              
+                <label for="exampleInputEmail1" required="required">Email address <input type="email" name="email" className="form-control"  aria-describedby="emailHelp" placeholder="Enter email" required="required"/></label>
+                <label for="exampleInputName" >Name  <input type="text" name="name"  className="form-control" id="exampleInputName" placeholder="Enter your name" required="required"/> </label>
+                <label for="exampleInputName" >Message <input type="text" name="name"  className="form-control" className="message" id="exampleInputName" placeholder="Type Your Message" /> </label>
             </div> 
-            <div className="form-group">
-                <label for="exampleInputName">Name  <input type="text" name="name"  className="form-control" id="exampleInputName" placeholder="Enter your name" required="required"/> </label>
+          
+                
                
-            </div>
+         
             
             <button type="submit" className="btn btn-primary"  disabled={serverState.submitting}>
                 Submit
