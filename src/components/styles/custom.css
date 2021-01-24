@@ -1,4 +1,10 @@
-
+h2{
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 60px;
+  padding: 10px;
+}
 .contact-container{
   margin: 0 auto;
   padding: 10px;
@@ -16,7 +22,7 @@
      float: right;
     margin-top: 0rem;
     width: 450px;
-    
+    margin-left: 170px;
   }
 
 

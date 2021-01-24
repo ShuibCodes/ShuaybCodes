@@ -9,6 +9,7 @@ const Contact = () => {
     
    return(
      <FooterLayout>
+     <h2>Get Involved!</h2>
          <div className="contact-container">
               <div className="contact-details">
                   <p> <span className="prompt" >Address: </span>200 Smiths Close , London, N22 5FL </p>
