@@ -2,8 +2,8 @@
 
 
 .background{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 20px 0px 10px 120px;
   flex-basis: 100%;
  margin: auto;
@@ -12,7 +12,7 @@
 
 
 .contact-container{
- flex-basis: 50%;
+
  margin-left: 30rem;
 margin-right: 25px;
  margin-top: -20rem;
