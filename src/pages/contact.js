@@ -3,7 +3,7 @@ import axios from "axios";
 import Map from '../pages/Map.js'
 import  FooterLayout from '../components/Layouts/BlogLayout'
 import {Helmet} from 'react-helmet'
-import '/src/pages/custom.css'
+import '/src/components/styles/custom.css'
 
 const Contact = () => {
     
