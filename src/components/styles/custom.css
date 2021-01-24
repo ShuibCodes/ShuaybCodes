@@ -12,7 +12,12 @@
   font-size: 30px;
   font-weight: 600;
 }
-
+ img{
+     float: right;
+    margin-top: -25rem;
+    width: 600px;
+    
+  }
 
 
 .maps{
@@ -26,7 +31,11 @@ margin-left: 50px;
 
 @media only screen and (max-width: 768px) {
   .contact-container{
-    display: none
+    display: block;
+  }
+
+  img{
+    display:none
   }
 
   .form{
@@ -43,7 +52,7 @@ margin-left: 50px;
   }
 
   .maps{
-    display: none
+    display:block
   }
 }
 

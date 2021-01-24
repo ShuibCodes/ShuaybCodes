@@ -2,7 +2,7 @@ import React, { useState }  from "react"
 
 import Map from '../pages/Map.js'
 import  FooterLayout from '../components/Layouts/BlogLayout'
-
+import pic from '../images/images.jpeg'
 import '/src/components/styles/custom.css'
 
 const Contact = () => {
@@ -18,7 +18,9 @@ const Contact = () => {
                     <p><span className="prompt" >PO BOX:
                     </span>P.O.Box 124, Lords Lane 211b </p>
               </div>
-            </div>
+              
+            </div>  
+            <img src={pic} ></img>
             <Map />
      </FooterLayout>
    )
