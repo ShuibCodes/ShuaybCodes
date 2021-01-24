@@ -1,45 +1,41 @@
 
-.form-control{
-  width: 450px;
 
+
+.background{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px 10px 120px;
+  flex-basis: 100%;
+ margin: auto;
 }
-.message{
-  width: 450px;
-  height: 100px;
-  display: block;
-}
+
+// .background > *{
+ 
+// }
+
 .contact-container{
-  float: right;
-  margin-top: -20rem;
+ flex-basis: 50%;
+ float: right;
+margin-right: 25px;
+ margin-top: -20rem;
+ height: 100%;
+}
+
+#messageBox{
+  height: 100px;
+}
+.form-control{
+  width: 400px;
+  border: black 0.5px solid;
 }
 
 .form{
+  height: 100%;
+
   
-    display: block;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5rem;
-  padding-right: 4rem;
 
 }
 
- .title{
-   display: inline;
-   margin-left: 7rem;
-   position: relative;
-   top: -5rem;
-   left: 10rem;
-   white-space: nowrap;
-   
-}
-
-label{
-    font-size: 22px;
-    
-}
-
-.form-group{
-    width: 550px;
-}
 
 
 .maps{
@@ -51,54 +47,43 @@ margin-left: 50px;
 
 
 .contact-details p{
-  font-size: 27px;
+  font-size: 30px;
   white-space: nowrap;
-  
+  overflow: hidden;
 }
 
 .prompt{
-  font-size: 27;
+  font-size: 25px;
   white-space: nowrap;
   padding-right: 10px;
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact-container{
+    display: none
+  }
 
-
-
- 
- 
-
-  @media screen and (max-width: 960px){
-    .form{
-      display: block;
-      margin: 0 auto;
-    }
-    .form-group{
-      width: 320px;
-    }
-    .title{
-      display: inline;
-      top: 0rem;
-      left: -2rem;
-      
-    }
-
-    .contact-container{
-      display: block;
-      margin: 0 auto;
-      justify-content: center;
-    }
-
-    .contact-details p{
-      font-size: 16px;
-    
-    }
-
-    .maps{
-      display: none;
-    } 
-
-
+  .form{
+    margin: auto;
+    margin-left: -40px;
+    padding-top: 1rem;
+    font-size: 30px;
 
   }
+
+  .form-control{
+    width: 120%;
+    height: 60px
+  }
+
+  .maps{
+    display: none
+  }
+}
+
+
+ 
+ 
+
+  

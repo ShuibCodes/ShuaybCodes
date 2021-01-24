@@ -21,14 +21,14 @@ class HeroSection extends Component {
            <Link to="this"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-80}
               duration={500} >
                 <button className="main-btn">Get Started</button>
            </Link> 
           </div>
-          <h2 className="header" id="this" > 3 Amazing Packages </h2>
+    
         </div>
-
+                <div className="this" ></div>
             </div>
         );
     }
