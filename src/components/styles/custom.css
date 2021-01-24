@@ -1,29 +1,18 @@
 
-.background{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 0px 10px 120px;
-
- margin: auto;
-}
-
-
-
 .contact-container{
-
- margin-left: 30rem;
-margin-right: 25px;
- margin-top: -20rem;
- height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
-#messageBox{
-  height: 100px;
+.prompt{
+  font-size: 30px;
+  font-weight: 600;
 }
-.form-control{
-  width: 400px;
-  border: black 0.5px solid;
-}
+
 
 
 .maps{
@@ -34,18 +23,6 @@ margin-left: 50px;
 }
 
 
-.contact-details p{
-  font-size: 30px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.prompt{
-  font-size: 25px;
-  white-space: nowrap;
-  padding-right: 10px;
-  font-weight: bold;
-}
 
 @media only screen and (max-width: 768px) {
   .contact-container{
