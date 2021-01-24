@@ -4,14 +4,10 @@
   margin-left: auto;
   margin-right: auto;
 align-items: center;
+flex-basis: 100%;
+margin: 0, auto;
 }
 
-.main-cards{
-  flex-basis: 100%;
-  margin: 0, auto;
-
- 
-}
 
 .button_cont{
   background-color: red;
@@ -29,10 +25,6 @@ align-items: center;
 
 }
 
-.card{
-  background-color: lightblue;
-  
-}
 
 .center{
   padding: 50px;

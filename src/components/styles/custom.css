@@ -1,11 +1,9 @@
 
-
-
 .background{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px 0px 10px 120px;
-  flex-basis: 100%;
+
  margin: auto;
 }
 
@@ -26,14 +24,6 @@ margin-right: 25px;
   width: 400px;
   border: black 0.5px solid;
 }
-
-.form{
-  height: 100%;
-
-  
-
-}
-
 
 
 .maps{

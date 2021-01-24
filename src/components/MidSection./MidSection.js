@@ -72,7 +72,7 @@ class MidSection extends Component {
               <h5 className="main-title" >
                 <span > <IconContext.Provider value={{className:"size"}} > <BsStar/> </IconContext.Provider></span>
                 
-                  Beginner </h5>
+                  Beginners </h5>
                 <span  className="price"> £15</span>
                
                 <p className="card-text" > Our Starter package is ideal for those who are not sure if martial arts are for them, but they are eager to find out more without wanting to commit to the more in depth Beginners classes.  </p>
