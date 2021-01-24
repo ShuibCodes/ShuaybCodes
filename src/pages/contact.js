@@ -17,10 +17,11 @@ const Contact = () => {
                     <p><span className="prompt" >Email: </span>info@example.co.uk</p>
                     <p><span className="prompt" >PO BOX:
                     </span>P.O.Box 124, Lords Lane 211b </p>
+
               </div>
-              
+                  <img src={pic} ></img>
             </div>  
-            <img src={pic} ></img>
+        
             <Map />
      </FooterLayout>
    )
