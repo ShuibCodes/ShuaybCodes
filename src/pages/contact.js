@@ -1,8 +1,8 @@
-import React, { useState }  from "react"
+import React from "react"
 
 import Map from '../pages/Map.js'
 import  FooterLayout from '../components/Layouts/BlogLayout'
-import pic from '../images/images.jpeg'
+import pic from '../image/images.jpeg'
 import '/src/components/styles/custom.css'
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
                     </span>P.O.Box 124, Lords Lane 211b </p>
 
               </div>
-                  <img src={pic} ></img>
+                  <img src={pic} alt={""} ></img>
             </div>  
         
             <Map />
