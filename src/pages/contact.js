@@ -2,7 +2,7 @@ import React from "react"
 
 import Map from '../pages/Map.js'
 import  FooterLayout from '../components/Layouts/BlogLayout'
-import pic from '../image/images.jpeg'
+import pic from '../pages/ContactImage/index.jpg'
 import '/src/components/styles/custom.css'
 
 const Contact = () => {
