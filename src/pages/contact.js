@@ -20,7 +20,7 @@ const Contact = () => {
                     </span>P.O.Box 124, Lords Lane 211b </p>
 
               </div>
-                  <img src={pic} alt={""} ></img>
+                  <img src={pic} alt={pic} ></img>
             </div>  
         
             <Map />
