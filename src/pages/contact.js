@@ -9,6 +9,7 @@ const Contact = () => {
     
    return(
      <FooterLayout> 
+     <h1 className="contact">Get In Touch !</h1>
       <div class="form-style-6">
         <h1>Contact Us</h1>
             <form action="https://formspree.io/f/mpzonppr" method="POST">
@@ -17,6 +18,9 @@ const Contact = () => {
             <textarea name="message" placeholder="Type your Message"></textarea>
             <input type="submit" value="Send" />
             </form>
+    </div>
+    <div className="contact-container" >
+      
     </div>
 
 

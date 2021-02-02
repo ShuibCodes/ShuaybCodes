@@ -68,24 +68,27 @@ margin-left: 50px;
 
    */
 
-   
+   .contact{
+     font-family: Arial, Helvetica, sans-serif;
+    
+   }
    .form-style-6{
     font: 95% Arial, Helvetica, sans-serif;
-    max-width: 400px;
+    max-width: 600px;
     margin: 10px auto;
     padding: 16px;
     background: #F7F7F7;
     position: relative;
-    right: 25rem;
-    top:5rem 
+    left: -20rem;
+    top:4rem 
   }
   .form-style-6 h1{
-    background: #43D1AF;
+    background: lightblue;
     padding: 20px 0;
     font-size: 140%;
     font-weight: 300;
     text-align: center;
-    color: #fff;
+    color: black;
     margin: -16px -16px 16px -16px;
   }
   .form-style-6 input[type="text"],
@@ -137,26 +140,31 @@ margin-left: 50px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    padding: 3%;
-    background: #43D1AF;
+    padding: 4%;
+    background:lightblue;
     border-bottom: 2px solid #30C29E;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;	
-    color: #fff;
+    color: black;
+    font-size: 20px;
   }
   .form-style-6 input[type="submit"]:hover,
   .form-style-6 input[type="button"]:hover{
-    background: #2EBC99;
+    background:lightblue;
   }
+
+  /* Mobile Screens  */
 
   @media only screen and (max-width: 768px) {
     .form-style-6{
+      max-width: 400px;
       position: fixed;
-      top: 10;
       bottom: 0;
-      right: 0;
       left: 0;
-    }
+      right: 0;
+    } 
 
   }
+
+
