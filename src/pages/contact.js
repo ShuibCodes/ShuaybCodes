@@ -1,29 +1,25 @@
 import React from "react"
 
-import Map from '../pages/Map.js'
+// import Map from '../pages/Map.js'
 import  FooterLayout from '../components/Layouts/BlogLayout'
-import pic from '../pages/ContactImage/index.jpg'
+// import pic from '../pages/ContactImage/index.jpg'
 import '/src/components/styles/custom.css'
 
 const Contact = () => {
     
    return(
-     <FooterLayout>
-     <h2>Get Involved!</h2>
-         <div className="contact-container">
-              <div className="contact-details">
-                  <p> <span className="prompt" >Address: </span>200 Smiths Close , London, N22 5FL </p>
-                    <p><span className="prompt" >Telephone: </span>0208115563 </p>
-                    <p><span className="prompt" >FAX: </span>0300554977 </p>
-                    <p><span className="prompt" >Email: </span>info@example.co.uk</p>
-                    <p><span className="prompt" >PO BOX:
-                    </span>P.O.Box 124, Lords Lane 211b </p>
+     <FooterLayout> 
+      <div class="form-style-6">
+        <h1>Contact Us</h1>
+            <form action="https://formspree.io/f/mpzonppr" method="POST">
+            <input type="text" name="name" placeholder="Your Name" />
+            <input type="email" name="_replyto" placeholder="Email Address" />
+            <textarea name="message" placeholder="Type your Message"></textarea>
+            <input type="submit" value="Send" />
+            </form>
+    </div>
 
-              </div>
-                  <img src={pic} alt={pic} ></img>
-            </div>  
-        
-            <Map />
+
      </FooterLayout>
    )
            
