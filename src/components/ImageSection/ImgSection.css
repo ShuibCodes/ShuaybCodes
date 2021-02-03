@@ -7,9 +7,7 @@
     margin-top: 3rem;
 }
 .image-container {
-    text-align: center;
-    margin-top: -5rem;    
-    /* width: 100%; */
+ 
  
   }
   
@@ -23,7 +21,7 @@
     grid-gap: 5rem;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(50px, auto);
-    width: 50%;
+    
     margin: 0 auto;
     width: 100%;
     max-width: 1000px;
@@ -31,6 +29,7 @@
     position: relative;
     bottom: 50px;
     border-radius: 2px;
+   left: 10rem;
     
   }
   .image-item:nth-child(5) {
@@ -74,23 +73,5 @@
     max-width: 50%;
   }
 
-  @media screen and (max-width: 760px){
-      .image-grid{
-        margin-left: 3rem;
-      }
-
-      .ImgTitle{
-       
-        display: none;
-    }
-    img{
-      max-width: 50%;
-     
-    }
-
-    .image-item{
-      width: 850px;
-    height: 550px;
-    }
-  }
+  
 
