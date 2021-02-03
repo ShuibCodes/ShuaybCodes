@@ -18,8 +18,8 @@ export class MapContainer extends Component {
       activeMarker: {},
       selectedPlace: {},
       mapCenter: {
-          lat: 51.50493851649202,
-          lng: -0.02331140276335189
+          lat: 51.598700,
+          lng: -0.102110,
       }
     };
    
@@ -52,7 +52,7 @@ export class MapContainer extends Component {
                 lng: this.state.mapCenter.lng
             }}
             style={mapStyles}
-            zoom={14}
+            zoom={16}
         >
           <Marker
             position={{
