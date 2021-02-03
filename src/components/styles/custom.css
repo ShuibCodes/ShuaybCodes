@@ -86,17 +86,29 @@ span{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  
 }
 .container{
   display: flex;
+  padding: 100px;
+  justify-content: center;
 }
 .form{
   /* margin-left: 20rem; */
   flex: 1;
   margin-right: 20px;
   max-height: 500px;
+
 }
+.form-style-6{
+  width: 600px;
+}
+.contact{
+  padding: 10px
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
    .contact{
