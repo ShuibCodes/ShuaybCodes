@@ -1,9 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel'
 import React from 'react'
-import image1 from './images/image1.png'
-import image2 from './images/image2.png'
-import image4 from './images/image4.png'
-import image5 from './images/image5.png'
+import image1 from './Images/image1.png'
+import image2 from './Images/image2.png'
+import image4 from './Images/image4.png'
+import image5 from './Images/image5.png'
 import './ImgSection.css'
 function ImgSection() {
     return (
