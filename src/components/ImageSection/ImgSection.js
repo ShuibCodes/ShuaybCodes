@@ -1,65 +1,51 @@
-import React from "react"
-import "./ImgSection.css"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Carousel from 'react-bootstrap/Carousel'
+import React from 'react'
+import image1 from './images/image1.png'
+import image2 from './images/image2.png'
+import image4 from './images/image4.png'
+import image5 from './images/image5.png'
+import './ImgSection.css'
+function ImgSection() {
+    return (
+      <>
+      <h2>Join Our Growing Community</h2>
+<div className="container" >
+       
+       <Carousel >
+<Carousel.Item interval={3000} style={{width: "1100px"}} >
 
-
-
-
-const ImgSection = () => {
-  const data = useStaticQuery(graphql`
-  query  {
-    allFile
-    (filter: 
-        {extension: {regex: "/(jpg)|(png)|(jpeg)/"}, 
-        name: {nin: ["background", "background2","gatsby-icon"]}}
+<img style={{height:"600px", minWidth: "1100px"}} 
+ className="d-block w-100"
+ src={image1}
+ alt="First slide"
+/>
+</Carousel.Item>
+<Carousel.Item interval={3000} style={{width: "1100px"}}>
+<img style={{height:"600px", minWidth:"1100px"}}
+ className="d-block w-100"
+ src={image2}
+ alt="Second slide"
+/>
+</Carousel.Item>
+<Carousel.Item interval={3000} style={{width: "1100px"}} >
+<img style={{height:"600px", minWidth:"1100px"}}
+ className="d-block w-100"
+ src={image4}
+ alt="Third slide"
+/>
+</Carousel.Item>
+<Carousel.Item interval={3000} style={{width: "1100px"}} >
+<img style={{height:"600px", minWidth:"1100px"}}
+ className="d-block w-100"
+ src={image5}
+ alt="Third slide"
+/>
+</Carousel.Item>
+</Carousel>
+   </div>
+      </>
         
-    ) {
-      edges {
-        node {
-          base
-          childImageSharp {
-            fluid {
-                       ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  
-`)
-     // map through images and return 
-   return(
-       <>
-       
-       <div>
-           <h2 className="ImgTitle" >Join Our Growing Community!</h2>
-       </div>
-             <div className="image-container">
-          
-          <div className="image-grid">
-              {data.allFile.edges.map((image,key)=> (
-                  // adding properties
-                  <Img key={key}
-                  className="image-item"
-                  fluid={image.node.childImageSharp.fluid}
-                  alt={image.node.base.split(".")[0]}
-                
-                        
-
-                  />
-              ))}
-          </div>
-          
-      </div>
-       </>
-    
-       
-       
-   )
-
+    )
 }
 
 export default ImgSection

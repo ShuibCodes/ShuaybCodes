@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+
+import {GiHighKick} from 'react-icons/gi'
 import {
     FaFacebook,
     FaInstagram,
@@ -7,7 +9,8 @@ import {
     FaTwitter,
     FaLinkedin
   } from 'react-icons/fa';
-import {AiTwotoneExperiment} from 'react-icons/ai'
+
+
 import '../Footer/footer.css'
 import { IconContext } from 'react-icons';
 
@@ -21,6 +24,11 @@ const Footer = () =>{
         //         }
         //     }
         // `)
+
+        const year = () => {
+          let year = new Date().getFullYear()
+          return year
+        }
 
     return(
         <div className='footer-container'>
@@ -47,11 +55,11 @@ const Footer = () =>{
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              <AiTwotoneExperiment className='navbar-icon' />
-              Title&Logo
+              <GiHighKick className='navbar-icon' />
+              WCA
             </Link>
           </div>
-          <small className='website-rights'>Title&Logo©  2020</small>
+          <small className='website-rights'>WingChunAcademy ©{ year()}</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
