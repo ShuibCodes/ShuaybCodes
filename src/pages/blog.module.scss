@@ -1,7 +1,8 @@
 .posts {
   list-style-type: none;
-  margin: 0;
+  margin: 5% 10%;
 }
+
 
 .post {
   margin: 1rem 0;
@@ -14,7 +15,11 @@
     width: 900px;
     box-shadow: 0px 15px 10px -15px #111;    
   }
-
+  img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+  }
 
   @media screen and (max-width: 760px) {
       a{

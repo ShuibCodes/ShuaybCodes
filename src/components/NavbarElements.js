@@ -122,7 +122,7 @@ export const NavItem = styled.li`
   }
 `
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.div`
 
   color: #141414;
   display: flex;

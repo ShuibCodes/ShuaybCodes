@@ -34,6 +34,7 @@ const Blog = props => {
     <FooterLayout>
     <Helmet title="Blog Post" />
       <BlogLayout>
+      {/* <img src={props.contentfulBlogPost.image} /> */}
       <h2 style={{fontSize:"50px"}} className="title">{props.data.contentfulBlogPost.title}</h2>
       <Styledp>{props.data.contentfulBlogPost.publishedDate}</Styledp>
       {documentToReactComponents(props.data.contentfulBlogPost.body.json,options)}
