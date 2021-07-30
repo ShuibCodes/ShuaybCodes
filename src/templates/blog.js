@@ -33,9 +33,8 @@ const Blog = props => {
   return (
     <FooterLayout>
     <Helmet title="Blog Post" />
-      <StyledLink to="/blog"> Back </StyledLink>
       <BlogLayout>
-      <Styledh1 className="this">{props.data.contentfulBlogPost.title}</Styledh1>
+      <h2 style={{fontSize:"50px"}} className="title">{props.data.contentfulBlogPost.title}</h2>
       <Styledp>{props.data.contentfulBlogPost.publishedDate}</Styledp>
       {documentToReactComponents(props.data.contentfulBlogPost.body.json,options)}
       </BlogLayout>

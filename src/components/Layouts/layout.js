@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../Header'
-import Footer from '../Footer/footer'
+
 import '../styles/index.scss'
 import './layout.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,7 +13,7 @@ const Layout = (props) =>{
         <div>
             {props.children}
         </div>
-        <Footer />
+   
         </>
     )
 }

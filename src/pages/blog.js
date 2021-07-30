@@ -24,7 +24,7 @@ const BlogPage = () => {
         <FooterLayout >
         <Helmet title="Blog" />
             <div className={blogStyles.background} >   
-            <h1 className={blogStyles.Maintitle} >Blog Articles:</h1>
+  
              <ol className={blogStyles.posts}>
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
@@ -34,9 +34,9 @@ const BlogPage = () => {
                             <Link to={`/blog/${edge.node.slug}`}>
                                 <div className={blogStyles.text}>
                                
-                                    <h2 className={blogStyles.title} >{edge.node.title}</h2>
+                                    <h2 className="title" >{edge.node.title}</h2>
                                     <p className={blogStyles.para} >{edge.node.publishedDate}</p>
-                                    <span> Read More <BiRightArrowAlt/> </span>  
+                                   
                                 </div>
                             </Link>
                         </li>

@@ -7,8 +7,8 @@ import styled from "styled-components"
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
-      ? "#12e9e9"
-      : "linear-gradient(to bottom,  rgba(255,255,255, 0.9) 0%,rgba(255,255,255,0) 100%)"};
+      ? "#f9f9f9"
+      : "#f9f9f9"};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
- 
+
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "#12e9e9" : "#12e9e9")};
@@ -46,7 +46,7 @@ export const NavLogo = styled(Link)`
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2.1rem;
   display: flex;
   align-items: center;
   font-style: italic;
@@ -108,13 +108,13 @@ export const NavMenu = styled.ul`
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     transition: all 0.25s ease;
-    background: #e0ffff 
+    background: white; 
   }
 `
 
 export const NavItem = styled.li`
   height: 80px;
-  
+  margin-right: 100px;
   
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -123,14 +123,14 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&display=swap');
+
   color: #141414;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+ font-family: monospace;
   font-weight: 600;
   font-style: italic;
   text-decoration: none;

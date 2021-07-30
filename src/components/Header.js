@@ -43,25 +43,18 @@ const Header = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo to="/" onClick={closeMobileMenu}>
-              <NavIcon />
-              W.C.A
+              ShuaybCodes
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
+            
+            
               <NavItem>
-                <NavLinks to="/"> Home </NavLinks> 
+              <NavLinks to="/blog" > Portfolio </NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks to="/about" > About</NavLinks>
-              </NavItem>
-              <NavItem>
-              <NavLinks to="/blog" > Blog</NavLinks>
-              </NavItem>
-              <NavItem>
-              <NavLinks to="/contact" > Contact </NavLinks>
-              </NavItem>
+         
             </NavMenu>
           </NavbarContainer>
         </Nav>

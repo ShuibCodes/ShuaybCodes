@@ -22,7 +22,8 @@ font-weight: 500;
 
 export const BlogLayout = styled.div`
     /* text-align: center; */
-    padding: 0 40px 0 40px;
+
+    padding: 10%;
     font-family: sans-serif;
     font-size: 20px;
     display: inline-block;
