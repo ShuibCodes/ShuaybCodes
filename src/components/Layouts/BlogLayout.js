@@ -10,7 +10,7 @@ const FooterLayout = (props) =>{
     return(
   
         <div className={LayoutStyles.content}>
-        <Header />
+
             {props.children}
         </div>
         

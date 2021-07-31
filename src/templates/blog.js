@@ -6,6 +6,7 @@ import {Helmet} from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Layout from '../components/Layouts/layout'
 import '../main.css'
 export const query = graphql`
   query($slug: String!) {
@@ -58,7 +59,7 @@ export const query = graphql`
 
 
 const Blog = props => {
-  
+  console.log(props)
   const options = {
 
     // gives us options on how specific node types are rendered
@@ -73,7 +74,7 @@ const Blog = props => {
   
   console.log()
   return (
-    <FooterLayout>
+    <Layout>
     <Helmet title="Blog Post" />
       <BlogLayout>
       {/* <Img fluid={imageData.file.fluid} alt="image"/> */}
@@ -89,9 +90,11 @@ const Blog = props => {
       <h2 style={{fontSize:"50px"}} className="title">{props.data.contentfulBlogPost.title}</h2>
       <Styledp>{props.data.contentfulBlogPost.publishedDate}</Styledp>
       {documentToReactComponents(props.data.contentfulBlogPost.body.json,options)}
+   
+
       </BlogLayout>
   
-    </FooterLayout>
+    </Layout>
       
      
     

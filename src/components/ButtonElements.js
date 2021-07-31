@@ -23,16 +23,24 @@ font-weight: 500;
 export const BlogLayout = styled.div`
     /* text-align: center; */
 
-    padding: 10%;
+
+    padding: 10% 20%;
     font-family: sans-serif;
     font-size: 20px;
     display: inline-block;
     
 
+    @media screen and (max-width: 760px) {
+        width: auto;
+        padding: 5%;
+        margin: 6px;
+  }
 `
+
 
 export const Styledh1 = styled.h1`
         font-size: 40px;
+        
 `
 
 export const Styledp = styled.p`
