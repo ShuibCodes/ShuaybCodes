@@ -6,6 +6,7 @@ import {Helmet} from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
 import Img from 'gatsby-image'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import '../main.css'
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {

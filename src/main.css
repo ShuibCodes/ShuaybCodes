@@ -5,6 +5,17 @@
     
 }
 
+
+
+@media screen and (max-width: 960px){
+  .title{
+      font-size: 25px !important;
+  }
+
+  h2{
+    font-size: 20px
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
 
 .logo-title{

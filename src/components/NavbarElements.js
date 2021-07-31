@@ -52,13 +52,15 @@ export const NavLogo = styled(Link)`
   font-style: italic;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
+  position: relative;
+  right:9rem;
   margin-left: -33rem;
   &:hover{
     text-decoration: none;
   }
 
   @media screen and (max-width: 960px){
-    margin-left: 7rem; 
+    margin-left: 12rem; 
     font-size:45px;
   }
 
