@@ -42,8 +42,8 @@ const Header = () => {
      
         <Nav active={scroll} click={click}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={closeMobileMenu}>
-              ShuaybCodes
+            <NavLogo className="logo-title"  to="/" onClick={closeMobileMenu}>
+              <h4 className="logo-title"  >ShuaybCodes</h4>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
@@ -52,7 +52,9 @@ const Header = () => {
             
             
               <NavItem>
-              <NavLinks to="/blog" > Portfolio </NavLinks>
+              <NavLinks to="/blog" > 
+                <h4 className="logo-title" > <a  style={{textDecoration:"none", color:"black"}} href="https://shuibabdillahi.netlify.app/"  target="_blank" rel="noopener noreferrer">Portfolio</a></h4>
+              </NavLinks>
               </NavItem>
          
             </NavMenu>

@@ -20,7 +20,7 @@ export const Nav = styled.nav`
 
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#12e9e9" : "#12e9e9")};
+    background: ${({ click }) => (click ? "F9F9F9" : "F9F9F9")};
     transition: 0.8s all ease;
   }
 `
@@ -127,20 +127,17 @@ export const NavLinks = styled.div`
   color: #141414;
   display: flex;
   align-items: center;
+  list-style-type:none;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
  font-family: monospace;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 400;
+  
   text-decoration: none;
   margin-top:10px;
   font-size: 30px;
-  &:hover {
-      color: darkred;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
+ 
 
 
   @media screen and (max-width: 960px) {
@@ -149,11 +146,7 @@ export const NavLinks = styled.div`
     width: 100%;
     display: table;
 
-    &:hover {
-      color: #ff4040;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
+   
   }
 `
 

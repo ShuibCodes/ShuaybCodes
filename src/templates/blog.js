@@ -18,6 +18,7 @@ export const query = graphql`
 `
 
 const Blog = props => {
+  console.log(props)
   const options = {
     // gives us options on how specific node types are rendered
       renderNode: {
