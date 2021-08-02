@@ -43,7 +43,7 @@ const Header = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo className="logo-title"  to="/" onClick={closeMobileMenu}>
-              <h4 className="logo-title"  >ShuaybCodes</h4>
+              <h4 className="logo-title"  >ShuaybCodes !!</h4>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
