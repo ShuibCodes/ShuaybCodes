@@ -43,17 +43,27 @@ const Header = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo className="logo-title"  to="/" onClick={closeMobileMenu}>
-              <h4 className="logo-title"  >ShuaybCodes !!</h4>
+              <h4 className="logo-title"  >Logo</h4>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
-            
+            <NavItem>
+              <NavLinks to="/about" > 
+              About
+              </NavLinks>
+              </NavItem>
+         
             
               <NavItem>
               <NavLinks to="/blog" > 
-                <h4 className="logo-title" > <a  style={{textDecoration:"none", color:"black"}} href="https://shuibabdillahi.netlify.app/"  target="_blank" rel="noopener noreferrer">Portfolio</a></h4>
+                Features
+              </NavLinks>
+              </NavItem>
+              <NavItem>
+              <NavLinks to="/blog" > 
+                <h4 style={{color:"white"}} className="logo-title" > <a  style={{textDecoration:"none", color:"black"}} href="https://shuibabdillahi.netlify.app/"  target="_blank" rel="noopener noreferrer">Reports</a></h4>
               </NavLinks>
               </NavItem>
          

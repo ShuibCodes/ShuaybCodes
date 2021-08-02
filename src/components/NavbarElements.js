@@ -7,9 +7,9 @@ import styled from "styled-components"
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
-      ? "#f9f9f9"
-      : "#f9f9f9"};
-  height: 80px;
+      ? "#175610"
+      : "#175610"};
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+
 
 
   @media screen and (max-width: 960px) {
@@ -42,7 +43,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-  color: #141414;
+  color:"white";
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -97,6 +98,8 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  color:"white";
+
    
   
 
@@ -111,22 +114,26 @@ export const NavMenu = styled.ul`
     opacity: 1;
     transition: all 0.25s ease;
     background: white; 
+  color:"white";
+
   }
+
 `
 
 export const NavItem = styled.li`
   height: 80px;
   margin-right: 100px;
-  
+  color:"white";
   @media screen and (max-width: 960px) {
     width: 100%;
+  color:"white";
     
   }
 `
 
 export const NavLinks = styled.div`
 
-  color: #141414;
+  color: white;
   display: flex;
   align-items: center;
   list-style-type:none;
