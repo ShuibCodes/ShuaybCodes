@@ -8,11 +8,11 @@ import histogram from '../images/HeroImages/histogram.png'
 import Navbar  from '../components/Header'
 import '../components/HeroSection/HeroSection.css'
 // import Layout from '../components/Layouts/layout'
-
+import Testimonials from '../components/Testimonials'
 
 import Head from '../components/head'
 
-import Blog from '../pages/blog'
+// import Blog from '../pages/blog'
 
 
 const Index = () =>{
@@ -40,7 +40,7 @@ const Index = () =>{
                 The only dedicated platform for data, analysis and insights into active nutrition. 
             </p>
             
-           
+            
                  <button className="hero-btn">Sign Up to..</button>
                  
         
@@ -175,7 +175,7 @@ const Index = () =>{
     
 </div>
  
-{/* <Testimonials/> */}
+<Testimonials/>
     
         </div>
         

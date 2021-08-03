@@ -4,13 +4,7 @@
   
     
     /* base styles */
-    body{
-        overflow-x: hidden;
-        font-family: 'Courier New', Courier, monospace;
-        
-          
-      }
-    
+   
     
     .grid{
         display: grid;
@@ -96,8 +90,13 @@
           position: relative;
           top: 2.2rem;
           right: 8rem;
-          font-size:50px;
+          font-size:30px;
           white-space: nowrap;
+          padding: 8px;
+          border: 1px solid rgba(90,216,120,0.5);
+          border-radius: 20px ;
+         
+          background-color: rgba(90,216,120,0.5);
         }
     
         .platform-image{
@@ -275,6 +274,6 @@
       }
      .reports-image{
       display: none;
-      bottom: 2rem;
+      
      }
     }

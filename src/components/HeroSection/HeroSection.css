@@ -181,8 +181,7 @@ input:checked + .slide-container .nav label { display: block; }
     font-size: 35px;
 }
 .carousel{
-    
-    right: 3rem;
+    right: 5rem;
   
  }
 /* btn */
@@ -231,10 +230,10 @@ input:checked + .slide-container .nav label { display: block; }
   }
   
 
-@media screen and (max-width: 660px){
+@media screen and (max-width:760px){
     .showcase{
         position: relative;
-        top: 4rem;
+        top: -1em;
         display: block;
         margin: 50px;
         background-color: transparent;
@@ -352,10 +351,13 @@ input:checked + .slide-container .nav label { display: block; }
 
 @media screen and (max-width: 760px){
     .about-section{
+        position: relative;
+        bottom: 5rem;
         display: grid;
         grid-template-columns: 1fr;
-        margin: 100px;
         justify-content: center;
+       left: 2.5rem;
+
     }
     
     .nick-img{
@@ -365,12 +367,10 @@ input:checked + .slide-container .nav label { display: block; }
     }
     .about-text{
         
-        width: 90%;
-    display: flex;
-    justify-content: center;
-     padding: 20px;
-     text-align: center;
-     line-height: 2.2rem;
+    text-align: center;
+        min-width: 300px;
+ 
+    
         
     }
 
@@ -405,7 +405,8 @@ input:checked + .slide-container .nav label { display: block; }
   padding: 50px;
   margin-top: 20px;
   text-align: center;
-  margin:10px
+  margin:10px;
+  font-size: 35px;
 }
 
 .brand-images{

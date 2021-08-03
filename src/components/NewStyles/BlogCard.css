@@ -79,7 +79,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr ;
     gap: 60px;
-    margin: 50px;
+    margin: 10px -12px;
   }
 }
 

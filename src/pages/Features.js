@@ -12,7 +12,7 @@ import {FcParallelTasks} from 'react-icons/fc'
 import { IconContext } from 'react-icons/lib'
 // import Popup from '../components/HeroSection/PopUp'
 // import '../components/HeroSection/Contact.scss'
-// import Footer from '../components/Footer/Footer'
+import Footer from './Footer'
 
 function Features() {
     const [buttonPopup, setButtonPopup] = useState(false)
@@ -131,7 +131,7 @@ function Features() {
                  <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
                  </Popup> */}
           
-           {/* <Footer /> */}
+           <Footer />
     </>
     )
 }

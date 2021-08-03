@@ -1,8 +1,8 @@
 
 
-body{
+/* body{
     overflow-x: hidden;
-  }
+  } */
   .show-btn{
     
     
@@ -39,7 +39,8 @@ body{
         right: 1rem;
       }
      .podcast-container{
-       display: block;
+       
+      justify-content: center;
        margin: 0;
      }
     }
@@ -339,9 +340,9 @@ body{
     position: relative;
   }
   
-  html, body {
+  /* html, body {
     height: 100%;
-  }
+  } */
   
   .container {
     align-items: center;

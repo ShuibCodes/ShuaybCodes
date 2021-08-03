@@ -11,7 +11,7 @@ const items = [
      { 
        name: <div style={{display:"flex"}}  >
        <IoMdText/>
-       <h4 style={{position:"relative", bottom:"6px", left:"10px"}}>Blogs</h4>
+       <h4 style={{position:"relative", bottom:"16px", left:"10px"}}>Blogs</h4>
        </div>,
        content: <Blogs />,
    

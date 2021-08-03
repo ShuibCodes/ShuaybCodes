@@ -13,6 +13,7 @@ import {
   NavMenu,
   NavLinks
 } from "../components/NavbarElements"
+import NILogo from "./NILogo"
 
 
 const Header = () => {
@@ -43,10 +44,12 @@ const Header = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo className="logo-title"  to="/" onClick={closeMobileMenu}>
-              <h4 className="logo-title"  >Logo</h4>
+              <h4 className="logo-title"  >
+                <NILogo/>
+              </h4>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars />}
+              {click ? <FaTimes /> : <FaBars style={{color:"white"}} />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
             <NavItem>
@@ -62,10 +65,16 @@ const Header = () => {
               </NavLinks>
               </NavItem>
               <NavItem>
-              <NavLinks to="/blog" > 
+              <NavLinks to="/contact" > 
+               Resources
+              </NavLinks>
+              </NavItem>
+              <NavItem>
+              <NavLinks to="/" > 
                Reports
               </NavLinks>
               </NavItem>
+
          
             </NavMenu>
           </NavbarContainer>
