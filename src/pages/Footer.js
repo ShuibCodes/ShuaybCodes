@@ -2,7 +2,7 @@ import React from 'react'
 import NILogoFooter from './NILogoFooter'
 import '../components/NewStyles/Footer.css'
 import {FaLinkedin, FaTwitter, FaYoutube, FaInstagram} from 'react-icons/fa'
-import {FooterLinks,SiteMap,Numbers,Contacts, FooterContainer,SocialIcon, SocialMedia, SocialMediaWrap, SocialLogo,WebsiteRights,SocialIcons, SocialIconLink, FooterIcon} from './FooterElements'
+import {FooterLinks,SiteMap,Numbers,Contacts, FooterContainer,SocialIcon, SocialMedia, SocialMediaWrap, SocialLogo,WebsiteRights,SocialIcons, SocialIconLink, FooterIcon} from '../components/FooterElements'
 
 const Footer = () => {
     return(
