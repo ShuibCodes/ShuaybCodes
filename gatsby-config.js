@@ -2,6 +2,7 @@ require("dotenv").config({
     path: `.env.${process.env.NODE_ENV}`,
     
    })
+   
    module.exports = {
        siteMetadata: {
            title: 'Wing Chun Academy',
@@ -16,8 +17,9 @@ require("dotenv").config({
            {
                resolve: 'gatsby-source-contentful',
               options: {
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
                   spaceId: process.env.CONTENTFUL_SPACE_ID,
-                  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+                
               }
           },
           'gatsby-plugin-sass',
