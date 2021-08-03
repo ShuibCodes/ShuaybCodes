@@ -9,7 +9,7 @@ function Podcasts() {
        </h3>        
       <div className="about-container">
 
-      <div className="about-text-two" >
+      <div className="about-text" >
           <p className="text" >Nick is an acknowledged expert and active leader in sport, exercise and nutrition for nearly a decade. The idea for Nutrition Integrated is a response to the challenge he faced when trying to use product data in consultancy projects.</p>
 
 

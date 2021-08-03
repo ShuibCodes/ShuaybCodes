@@ -127,7 +127,13 @@ body{
         float: none;
       }
     }
-  
+
+    @media screen and (max-width:760px){
+        .podcast-text{
+          
+        }
+
+    }
   
   /* 
    blogs */
@@ -138,13 +144,12 @@ body{
   
     /* Webinar */
     .webinar-text{
-      width: 400px;
-      padding:  60px 10px;
+      
+      
     }
   
     .webinar-container{
-      margin: 50px 20px;
-      margin-left: 34px;
+
       
     }
   
@@ -362,6 +367,10 @@ body{
       padding: 0px;
     }
     
+    .webinar-container{
+      
+    }
+  
 } 
 
   
@@ -431,8 +440,9 @@ body{
     
       margin-top: 2rem;
       overflow: hidden;
+      
   }
-  x
+  
   .accordion-item {
     overflow: hidden;
     transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
@@ -462,6 +472,15 @@ body{
     
   }
   @media screen and (max-width: 760px){
+     
+  .accordion-wrapper {
+    
+    margin-top: 2rem;
+    overflow: hidden;
+    position: relative;
+    right: 2.2rem;
+    
+}
     
   .accordion-title {
    width: 300px;

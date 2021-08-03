@@ -16,15 +16,15 @@ const items = [
        content: <Blogs />,
    
      },
-     { 
-       name:
-       <div style={{display:"flex"}} >
-         <FaVideo/>
-       <h4 style={{position:"relative", bottom:"16px", left:"10px"}} >Webinar</h4>
-       </div>,
-       content: <Webinars/>,
+    //  { 
+    //    name:
+    //    <div style={{display:"flex"}} >
+    //      <FaVideo/>
+    //    <h4 style={{position:"relative", bottom:"16px", left:"10px"}} >Webinar</h4>
+    //    </div>,
+    //    content: <Webinars/>,
       
-     },
+    //  },
      { 
        name: 
        <div style={{display:"flex"}}>

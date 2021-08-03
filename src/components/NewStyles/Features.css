@@ -255,12 +255,26 @@
   
   
     @media screen and (max-width: 760px){
+      .header{
+        display: flex;
+        justify-content: center;
+        margin-left:50px;
+      }
       .platform{
-        font-size:40px;
+        
+        
+        font-family:  'Montserrat', sans-serif;
+        font-size:34px;
+        white-space: nowrap;
+        justify-self: center;
       }
     
       .platform-image{
-        height: 460px;
-        width: 330px;
+         display: none;
+       
       }
+     .reports-image{
+      display: none;
+      bottom: 2rem;
+     }
     }

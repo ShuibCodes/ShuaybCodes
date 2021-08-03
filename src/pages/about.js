@@ -28,8 +28,9 @@ function About() {
         <div className="about-container">
 
         <div className="about-text" >
-            <p className="text" >We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.</p>
-            <p className="text" >We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.</p>
+            <p className="text" >We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.
+            We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.</p>
+
 
         </div> 
         </div>

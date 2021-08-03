@@ -39,27 +39,11 @@ a:hover{
 
 
 
-.about-text{
-    font-size: 25px;    
-    font-family: 'Poppins', sans-serif;
-   width: 1000px;
-   text-align:center;
-    line-height: 2.8rem;
-
-    
-}
-
 @media screen and (max-width: 760px){
     .about-me{
         padding: 5% ;
         
     }
-    .about-text{
-        margin-top: 30px;
-      font-size: 18px;
-      width: auto;
-      font-family: 'Poppins', sans-serif;
-      line-height: 2.3rem;
-    }
+   
     
   }

@@ -343,36 +343,43 @@ input:checked + .slide-container .nav label { display: block; }
     margin-top: 120px;
 }
 
-p{
-    font-family: ;
+
+.about-text{
+        
+    
+    
 }
+
 @media screen and (max-width: 760px){
     .about-section{
         display: grid;
         grid-template-columns: 1fr;
         margin: 100px;
+        justify-content: center;
     }
     
     .nick-img{
-        position: relative;
-        right: 5rem;
-        min-width: 240px;
-        min-height: 240px;
+     
+        max-width: 300px;
+        /* max-height: 240px; */
     }
     .about-text{
-        text-align: center;
-        width: 300px;
-      position: relative;
-       right: 4rem;
-       padding: 25px;
+        
+        width: 90%;
+    display: flex;
+    justify-content: center;
+     padding: 20px;
+     text-align: center;
+     line-height: 2.2rem;
+        
     }
 
     .about-text-two{
         text-align: center;
         font-size: 13px !important;
-        position: relative;
-        right: 6rem;
-        padding: 25px;
+           word-wrap: break-word;
+           width: 100%;
+           padding: 25px;
     }
 
 
@@ -437,8 +444,8 @@ p{
   @media screen and (max-width: 660px){
     .brand-images{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-right: 2rem;
+        grid-template-columns: 1fr ;
+      
         padding:  10px;
     }
   
