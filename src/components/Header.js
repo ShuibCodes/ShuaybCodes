@@ -57,13 +57,13 @@ const Header = () => {
          
             
               <NavItem>
-              <NavLinks to="/blog" > 
+              <NavLinks to="/Features" > 
                 Features
               </NavLinks>
               </NavItem>
               <NavItem>
               <NavLinks to="/blog" > 
-                <h4 style={{color:"white"}} className="logo-title" > <a  style={{textDecoration:"none", color:"black"}} href="https://shuibabdillahi.netlify.app/"  target="_blank" rel="noopener noreferrer">Reports</a></h4>
+               Reports
               </NavLinks>
               </NavItem>
          

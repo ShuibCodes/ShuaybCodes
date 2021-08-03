@@ -9,7 +9,7 @@ export const Nav = styled.nav`
     active
       ? "#175610"
       : "#175610"};
-  height: 90px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,6 @@ export const NavIcon = styled(GiHighKick)`
 
 export const MobileIcon = styled.div`
   display: none;
-
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
@@ -131,21 +130,20 @@ export const NavItem = styled.li`
   }
 `
 
-export const NavLinks = styled.div`
+export const NavLinks = styled(Link)`
 
   color: white;
   display: flex;
   align-items: center;
   list-style-type:none;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0rem;
   height: 100%;
- font-family: monospace;
+ font-family: sans-serif;
   font-weight: 400;
-  
   text-decoration: none;
   margin-top:10px;
-  font-size: 30px;
+  font-size: 20px;
  
 
 
@@ -154,7 +152,7 @@ export const NavLinks = styled.div`
     padding: 2rem;
     width: 100%;
     display: table;
-
+    color:black;
    
   }
 `
