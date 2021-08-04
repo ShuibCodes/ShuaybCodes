@@ -13,7 +13,7 @@ require("dotenv").config({
   
             
            'gatsby-plugin-react-helmet',`gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
-  
+       `gatsby-plugin-styled-components`,
            {
                resolve: 'gatsby-source-contentful',
               options: {
@@ -21,6 +21,7 @@ require("dotenv").config({
                   spaceId: process.env.CONTENTFUL_SPACE_ID,
                 
               }
+              
           },
           'gatsby-plugin-sass',
           {
