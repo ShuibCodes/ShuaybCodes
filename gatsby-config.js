@@ -11,7 +11,7 @@ require("dotenv").config({
        plugins: [
            `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
   
-            
+           `gatsby-plugin-sass`,
            'gatsby-plugin-react-helmet',`gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
        `gatsby-plugin-styled-components`,
            {
