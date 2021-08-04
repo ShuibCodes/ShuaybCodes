@@ -3,7 +3,7 @@ import podcast from '../images/FW-podcast.png'
 
 function Podcasts() {
     return (
-      <div className="about-section">
+      <div className="podcast-section">
 
           <img className="nick-img"  src={podcast} alt="Nick"  ></img>
             

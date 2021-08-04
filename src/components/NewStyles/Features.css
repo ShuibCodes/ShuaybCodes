@@ -171,16 +171,16 @@
     
     
       .featureLeft{
-        position: relative;
+        /* position: relative;
         right: -30px;
-        top: 20px;
+        top: 20px; */
         
       }
       .featureRight{
-        position: relative;
+        /* position: relative;
        left: 50px;
        top: 20px;
-    
+     */
       }
       .marginBottom{
         position: relative;
@@ -260,8 +260,8 @@
         margin-left:50px;
       }
       .platform{
-        
-        
+        position: relative;
+        right: 6rem;
         font-family:  'Montserrat', sans-serif;
         font-size:34px;
         white-space: nowrap;

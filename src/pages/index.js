@@ -9,7 +9,7 @@ import Navbar  from '../components/Header'
 import '../components/HeroSection/HeroSection.css'
 // import Layout from '../components/Layouts/layout'
 import Testimonials from '../components/Testimonials'
-
+import Footer from '../pages/Footer'
 import Head from '../components/head'
 
 // import Blog from '../pages/blog'
@@ -28,7 +28,7 @@ const Index = () =>{
       <div>
         <Navbar/>
                     <section class="showcase" >
-        <div class="container grids">
+        <div class="main-container grids">
             <div style={{position:"relative", bottom:"2.5rem" ,right:"5rem"}} class="showcase-text">
             <div style={{position:"relative", }} className="mainTitle"><br />
                 <span className="title-span">Get in.</span>
@@ -178,7 +178,7 @@ const Index = () =>{
 <Testimonials/>
     
         </div>
-        
+        <Footer/>
 
 
            
