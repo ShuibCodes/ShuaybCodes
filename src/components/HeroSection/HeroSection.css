@@ -364,6 +364,26 @@ input:checked + .slide-container .nav label { display: block; }
     height: 100%;
     width: 1300px;  
 }
+
+ /* Laptop */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .main-container{
+        width: 100%;
+   
+       }
+
+       .showcase-text{
+           width: 550px
+       }
+   
+}
+
+
+
+
 @media screen and (max-width: 760px){
 
         .main-container{
