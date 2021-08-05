@@ -22,7 +22,7 @@ ul.slides {
     overflow: hidden;
     list-style: none;
     position: relative;
-    left:8rem
+    left:0rem
 }
 
 .slides * {
@@ -378,7 +378,14 @@ input:checked + .slide-container .nav label { display: block; }
        .showcase-text{
            width: 400px
        }
-   
+       .site-intro{
+        font-size: 25px;
+    }
+
+    .slides{
+        width:
+    }
+
 }
 
 
