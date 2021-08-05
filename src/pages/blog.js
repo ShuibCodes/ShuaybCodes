@@ -25,7 +25,7 @@ const BlogPage = () => {
     return (
         <FooterLayout >
         <Helmet title="Blog" />
-            <div  >   
+            <div className="blogs-group"  >   
   
              <ol >
                 {data.allContentfulLongPost.edges.map((edge) => {

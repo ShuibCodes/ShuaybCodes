@@ -14,7 +14,7 @@ const Blogs = () => {
 
     return (
         <div>
-          <div  style={{paddingLeft:"15%"}} className="blog-container">
+          <div   className="blog-container">
       
             <h4 style={{textAlign:"center", padding: "20px"}}>Free to Access</h4>
    

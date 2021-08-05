@@ -405,6 +405,9 @@
     padding-left: 15px;
   }
   
+  .blogs-group{
+    margin-left: 120px
+  }
   @media screen and (max-width: 760px){
     .accordion__single__question {
       width: 300px;
@@ -413,6 +416,8 @@
     }
    } 
   
+   
+
   @media screen and (max-width: 760px){
     .flexBox{
       display: block
