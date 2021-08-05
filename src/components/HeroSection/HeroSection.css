@@ -22,7 +22,7 @@ ul.slides {
     overflow: hidden;
     list-style: none;
     position: relative;
-    left:0rem
+    left:6rem
 }
 
 .slides * {
