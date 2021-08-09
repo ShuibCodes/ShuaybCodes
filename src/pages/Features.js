@@ -3,15 +3,14 @@ import '../components/NewStyles/Features.css'
 import slides from  '../images/data-trends.svg'
 import{ Link } from 'gatsby'
 import reports from  '../images/reports.svg'
-// import Popup from './HeroSection/PopUp'
+import Popup from '../components/Popup'
 import Navbar from '../components/Header'
 import {FcBullish} from 'react-icons/fc'
 import {FcIdea} from 'react-icons/fc'
 import {FcDataSheet} from 'react-icons/fc'
 import {FcParallelTasks} from 'react-icons/fc'
 import { IconContext } from 'react-icons/lib'
-// import Popup from '../components/HeroSection/PopUp'
-// import '../components/HeroSection/Contact.scss'
+import '../components/contact.scss'
 import Footer from './Footer'
 
 function Features() {
@@ -121,10 +120,10 @@ function Features() {
         </div>
 
     
-        {/* <button onClick={() => setButtonPopup(true)}  className="float">Contact Us</button>
+        <button onClick={() => setButtonPopup(true)}  className="float">Contact Us</button>
                  <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
                  </Popup>
-           */}
+          
       </div>
            </div>
            {/* <button onClick={() => setButtonPopup(true)}  className="float">Contact Us</button>

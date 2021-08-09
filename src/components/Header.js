@@ -61,12 +61,17 @@ const Header = () => {
             
               <NavItem>
               <NavLinks to="/Features" > 
-                Features
+                Products 
               </NavLinks>
               </NavItem>
               <NavItem>
               <NavLinks to="/contact" > 
                Resources
+              </NavLinks>
+              </NavItem>
+              <NavItem>
+              <NavLinks to="/contact" > 
+              Dataset
               </NavLinks>
               </NavItem>
               <NavItem>

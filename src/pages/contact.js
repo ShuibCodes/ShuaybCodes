@@ -7,6 +7,7 @@ import Blogs from '../pages/AllBlogs'
 import {FaPodcast} from 'react-icons/fa'
 import {IoMdText} from 'react-icons/io'
 import {FaVideo} from 'react-icons/fa'
+import Footer from './Footer'
 const items = [
      { 
        name: <div style={{display:"flex"}}  >
@@ -44,7 +45,7 @@ const items = [
        
    
        return (
-         <div className="accordion-wrapper">
+         <div  className="accordion-wrapper">
            
            <div
           
@@ -71,8 +72,10 @@ const Contact = () => {
       </div>
 
         
-      
-       
+      <div className="footer-resources" >
+      <Footer/>
+      </div>
+    
        
         </>
    )

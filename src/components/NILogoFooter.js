@@ -3,8 +3,8 @@ import React from 'react';
 const NILogo = () => {
     return (
         <div>
-            <svg style={{position:"relative", right:"20px"}}  className="NI-logo" viewBox= "1310 3 100 180"  width="350%" height="70" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
- <title>Icon Assets</title>
+            <svg  className="footer-logo" viewBox= "10 -10 900 250" width="100%" height="60px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
+
 
  <g>
   <title>Layer 1</title>

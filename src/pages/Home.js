@@ -12,6 +12,8 @@ import '../components/HeroSection/HeroSection.css'
 import Testimonials from '../components/Testimonials'
 import Footer from '../pages/Footer'
 function Home() {
+
+
     return (
         <>
         <div>
@@ -29,11 +31,7 @@ function Home() {
                 The only dedicated platform for data, analysis and insights into active nutrition. 
             </p>
             
-            
-                 <button className="hero-btn">Sign Up to..</button>
-                 
-        
-         <div className="this" ></div>
+  
 
             </div>
             <div class="showcase-form">

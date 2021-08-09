@@ -5,15 +5,20 @@ require("dotenv").config({
    
    module.exports = {
        siteMetadata: {
-           title: 'Wing Chun Academy',
-           author: 'Shuib Abdillahi'
+           title: 'Nutrition Integrated',
+           author: 'Nutrition Integrated'
        },
        plugins: [
-           `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
-  
+           `gatsby-plugin-sharp`, 
+           `gatsby-transformer-sharp`,
            `gatsby-plugin-sass`,
-           'gatsby-plugin-react-helmet',`gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
-       `gatsby-plugin-styled-components`,
+           'gatsby-plugin-react-helmet',
+           `gatsby-plugin-sharp`,
+           `gatsby-transformer-sharp`,
+            `gatsby-plugin-styled-components`,
+
+         
+            
            {
                resolve: 'gatsby-source-contentful',
               options: {
@@ -23,6 +28,7 @@ require("dotenv").config({
               }
               
           },
+          
           'gatsby-plugin-sass',
           {
               resolve: 'gatsby-source-filesystem',
@@ -36,7 +42,18 @@ require("dotenv").config({
           },
           
               
-              
+        //   {
+        //     resolve: `gatsby-plugin-manifest`,
+        //     options: {
+        //       name: 'Nutrition Integrated',
+        //       short_name: 'Nutrition Integrated',
+        //       start_url: '/',
+        //       background_color: '#f7f0eb',
+        //       theme_color: '#a2466c',
+        //       display: 'standalone',
+        //       icon: 'src/images/favicon.ico',
+        //     },
+        // }
       ]
       
   }

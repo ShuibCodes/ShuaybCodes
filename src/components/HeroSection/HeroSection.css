@@ -338,11 +338,6 @@ input:checked + .slide-container .nav label { display: block; }
 }
 
 
-.about-text{
-        
-    
-    
-}
 
 .main-container{
     align-items: center;
@@ -371,6 +366,8 @@ input:checked + .slide-container .nav label { display: block; }
         font-size: 25px;
     }
 
+
+
     ul.slides {
         display: block;
         position: relative;
@@ -397,6 +394,10 @@ input:checked + .slide-container .nav label { display: block; }
 
         }
 
+        .text{
+            font-size: 16px !important ;
+        }
+    
     .about-section{
         position: relative;
         bottom: 5rem;

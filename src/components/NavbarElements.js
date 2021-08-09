@@ -23,6 +23,7 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "F9F9F9" : "F9F9F9")};
     transition: 0.8s all ease;
+    
   }
 `
 
@@ -144,7 +145,9 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   margin-top:10px;
   font-size: 20px;
- 
+ &:hover{
+   color:white;
+ }
 
 
   @media screen and (max-width: 960px) {
@@ -153,6 +156,9 @@ export const NavLinks = styled(Link)`
     width: 100%;
     display: table;
     color:black;
+    &:hover{
+   color:white;
+ }
    
   }
 `

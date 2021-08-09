@@ -1,8 +1,7 @@
 
 
-/* body{
-    overflow-x: hidden;
-  } */
+
+  
   .show-btn{
     
     
@@ -75,10 +74,7 @@
   }
   
   
-  .text{
-    font-size:20px !important;
-  }
-  
+
   .sidebar {
       margin: 0;
       padding: 0;
@@ -522,4 +518,4 @@
     padding: 1em 1.5em;
   }
   
-  
+ 
