@@ -1,76 +1,105 @@
 import React from 'react'
-import { ResponsiveChoropleth } from "@nivo/geo";
-import countries from '../components/countries.json'
+import dataMan from '../images/man-charts.svg'
+import bar from '../images/bar-image.jpg'
+import powder from '../images/powder-image.jpg'
+
+import Navbar from '../components/Header'
+import Footer from '../pages/Footer'
+import '../components/NewStyles/Resources.css'
+import GeoMap from './GeoMap'
+import info from '../images/bar-infographic.png'
 function Dataset() {
 
-  const data = [
-    {
-      id: "AFG",
-      value: 336354
-    },
-    {
-      id: "AGO",
-      value: 296583
-    },
-    {
-      id: "ALB",
-      value: 364571
-    }
-  
-  ]
-  const MyResponsiveChoropleth = ({ data }) => (
-    <div style={{ height: "400px" , width:"500px"}}
-    >
-    <ResponsiveChoropleth
-      data={data}
-      features={countries.features}
-      colors="nivo"
-      unknownColor="#666666"
-      label="properties.name"
-      valueFormat=".2s"
-      projectionTranslation={[0.5, 0.5]}
-      enableGraticule={true}
-      graticuleLineColor="#dddddd"
-      borderWidth={0.5}
-      borderColor="#152538"
-      legends={[
-        {
-          anchor: "bottom-left",
-          direction: "column",
-          justify: true,
-          translateX: 20,
-          translateY: -100,
-          itemsSpacing: 0,
-          itemWidth: 94,
-          itemHeight: 18,
-          itemDirection: "left-to-right",
-          itemTextColor: "#444444",
-          itemOpacity: 0.85,
-          symbolSize: 18,
-          effects: [
-            {
-              on: "hover",
-              style: {
-                itemTextColor: "#000000",
-                itemOpacity: 1
-              }
-            }
-          ]
-        }
-      ]}
-    />
-    </div>
 
-  );
 
     return (
         
-            <div className="App">
-        <h1>@nivo/geo</h1>
-        <div style={{ height: "400px" , width:"500px"}}>
-          <MyResponsiveChoropleth data={data} />
+            <div style={{height:"auto"}}>
+      <Navbar/>
+      <div className="infographic-section">
+      <div  className="benefits">
+        <div style={{position:"relative", top:"3rem"}} className="benefit-one" >
+        <img className="bar-image" src={info} alt="appData" ></img>
+<div className="benefits-block" >
+            <h4 className="benefit-title" >Data - In depth knowledge at scale</h4>
+
+            <p className="benefits-text" >An extensive product database that includes functional bars and drinks, protein powders and all products related to gaming across the EU and US.</p>
+              <ul className="benefits-points">
+                <li className="point">Covering startups, DTC, retailers and e-tailers.</li>
+                <li className="point">Nutrition, ingredients and flavour</li>
+                <li className="point">Claims and positioning</li>
+                <li className="point">Amazon price and revenue</li>
+                <li className="point">Industry informed categorisation</li>
+                <li className="point">Net change based on launches and delists</li>
+              </ul>
+            
+            </div>
+      
+</div>
         </div>
       </div>
+
+
+      <div className="App">
+
+<div style={{ height: "300px" }}>
+  <GeoMap/>
+</div>
+
+</div>
+  
+
+        <div className="benefits">
+        <div className="benefit-one" >
+        <img className="benefits-image" src={bar} alt="appData" ></img>
+        <div className="benefits-block" >
+                    <h4 className="benefit-title" >Data - In depth knowledge at scale</h4>
+
+                    <p className="benefits-text" >An extensive product database that includes functional bars and drinks, protein powders and all products related to gaming across the EU and US.</p>
+                      <ul className="benefits-points">
+                        <li className="point">Covering startups, DTC, retailers and e-tailers.</li>
+                        <li className="point">Nutrition, ingredients and flavour</li>
+                        <li className="point">Claims and positioning</li>
+                        <li className="point">Amazon price and revenue</li>
+                        <li className="point">Industry informed categorisation</li>
+                        <li className="point">Net change based on launches and delists</li>
+                      </ul>
+                    
+                    </div>
+
+        </div>
+          <div className="benefit-one" >
+
+        <div className="benefits-block" >
+                    <h4 className="benefit-title" >Data - In depth knowledge at scale</h4>
+
+                    <p className="benefits-text" >An extensive product database that includes functional bars and drinks, protein powders and all products related to gaming across the EU and US.</p>
+                      <ul className="benefits-points">
+                        <li className="point">Covering startups, DTC, retailers and e-tailers.</li>
+                        <li className="point">Nutrition, ingredients and flavour</li>
+                        <li className="point">Claims and positioning</li>
+                        <li className="point">Amazon price and revenue</li>
+                        <li className="point">Industry informed categorisation</li>
+                        <li className="point">Net change based on launches and delists</li>
+                      </ul>
+                    
+                    </div>
+                    <img style={{width:"950px"}} className="benefits-image" src={powder} alt="appData" ></img>
+        </div>
+       
+        {/* <button onClick={() => setButtonPopup(true)}  className="float">Contact Us</button>
+                 <Popup trigger={buttonPopup} setTrigger={setButtonPopup} >
+                 </Popup>
+           */}
+    
+</div>
+
+
+
+    {/* <div className="footer-dataset" >
+      <Footer/>
+      </div> */}
+      </div>  
         
     )
 }

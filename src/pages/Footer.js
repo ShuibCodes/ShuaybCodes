@@ -33,19 +33,19 @@ const Footer = () => {
             </div>  
             <div className="section-three">
             <h2  className="follow-us">Follow us !</h2>
-            <div>
+            <div className="socials" >
             <IconContext.Provider  value={{ color:'white', size: '35px' }}>
                 <FaInstagram/>
             </IconContext.Provider>
             </div>
          
         
-            <div>
+            <div className="socials">
             <IconContext.Provider  value={{  color:'white', size: '35px' }}>
                 <FaLinkedin/>
             </IconContext.Provider>
             </div>
-            <div>
+            <div className="socials">
             <IconContext.Provider  value={{  color:'white', size: '35px' }}>
                 <FaTwitter/>
             </IconContext.Provider>

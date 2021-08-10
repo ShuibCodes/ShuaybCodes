@@ -270,7 +270,15 @@ input:checked + .slide-container .nav label { display: block; }
         margin-top: 100px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 100px
+        gap: 100px;
+
+        
+}
+
+.inner-div{
+   
+  
+
 }
 
 .benefits-image{

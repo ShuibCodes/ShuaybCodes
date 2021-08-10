@@ -518,4 +518,38 @@
     padding: 1em 1.5em;
   }
   
- 
+  .map-svg path{
+    fill:white;
+    stroke: black;
+  }
+
+  .map-svg{
+    position: relative;
+    bottom: 5rem;
+    right: 2rem;
+    padding: 00px;
+  }
+
+
+  .infographic-section{
+    background-color:rgb(255,232,210);
+    height: 500px;
+
+    position: relative;
+    bottom:8.3rem;
+  }
+
+    .bar-image{
+      width: 100%;
+    }
+
+  @media screen and (max-width: 760px){
+    .bar-image{
+      width: 300px; 
+      position: relative;
+      right: 100px;
+      }
+
+
+  }
+
