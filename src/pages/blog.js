@@ -8,6 +8,11 @@ import '../components/NewStyles/BlogCard.css'
 import '../components/NewStyles/BlogStyles.css'
 import bars from '../images/bars.jpeg'
 const BlogPage = () => {
+
+   // sorting feature:
+
+    // when button is clicked, sort tags into alphabetical order based on slug
+
     const data = useStaticQuery(graphql`
         query {
             allContentfulLongPost(sort: {fields: updatedAt, order: DESC}) {
@@ -21,6 +26,8 @@ const BlogPage = () => {
               }
         }
     `)
+console.log(data.allContentfulLongPost.edges.map((e) => e.node.title).sort())
+  
     // https://www.youtube.com/watch?v=8t0vNu2fCCM&t=12856s
     return (
         <FooterLayout >
@@ -60,7 +67,7 @@ const BlogPage = () => {
 
                        
                     )
-                })}
+                }).sort()}
             </ol>
             </div>
              

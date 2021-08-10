@@ -7,6 +7,7 @@ import Navbar from '../components/Header'
 import Footer from '../pages/Footer'
 import '../components/NewStyles/Resources.css'
 import GeoMap from './GeoMap'
+import nivoMap from '../components/nivoMap'
 import info from '../images/bar-infographic.png'
 function Dataset() {
 
@@ -14,7 +15,7 @@ function Dataset() {
 
     return (
         
-            <div style={{height:"auto"}}>
+            <div style={{height:"100%"}}>
       <Navbar/>
       <div className="infographic-section">
       <div  className="benefits">
@@ -43,7 +44,7 @@ function Dataset() {
       <div className="App">
 
 <div style={{ height: "300px" }}>
-  <GeoMap/>
+ <GeoMap/>
 </div>
 
 </div>

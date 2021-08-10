@@ -52,33 +52,33 @@ const Header = () => {
               {click ? <FaTimes /> : <FaBars style={{color:"white"}} />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
-            <NavItem>
+          
               <NavLinks to="/about" > 
               About
               </NavLinks>
-              </NavItem>
+             
          
             
-              <NavItem>
+            
               <NavLinks to="/Features" > 
                 Products 
               </NavLinks>
-              </NavItem>
-              <NavItem>
+             
+            
               <NavLinks to="/contact" > 
                Resources
               </NavLinks>
-              </NavItem>
-              <NavItem>
+             
+            
               <NavLinks to="/Dataset" > 
               Dataset
               </NavLinks>
-              </NavItem>
-              <NavItem>
+             
+            
               <NavLinks to="/" > 
                Reports
               </NavLinks>
-              </NavItem>
+             
 
          
             </NavMenu>

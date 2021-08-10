@@ -138,7 +138,7 @@ export const NavLinks = styled(Link)`
   align-items: center;
   list-style-type:none;
   text-decoration: none;
-  padding: 0.2rem 0rem;
+  padding: 0.2rem 18px;
   height: 100%;
  font-family: sans-serif;
   font-weight: 400;
