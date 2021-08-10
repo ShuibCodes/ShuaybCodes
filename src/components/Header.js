@@ -70,7 +70,7 @@ const Header = () => {
               </NavLinks>
               </NavItem>
               <NavItem>
-              <NavLinks to="/dataset" > 
+              <NavLinks to="/Dataset" > 
               Dataset
               </NavLinks>
               </NavItem>
