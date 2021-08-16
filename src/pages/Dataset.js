@@ -43,9 +43,9 @@ function Dataset() {
 
       <div className="App">
 
-<div style={{ height: "300px" }}>
+{/* <div style={{ height: "300px" }}>
  <GeoMap/>
-</div>
+</div> */}
 
 </div>
   
@@ -97,9 +97,9 @@ function Dataset() {
 
 
 
-    {/* <div className="footer-dataset" >
+    <div className="footer-dataset" >
       <Footer/>
-      </div> */}
+      </div>
       </div>  
         
     )

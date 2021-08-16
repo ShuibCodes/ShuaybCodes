@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
             <div className="socials">
             <IconContext.Provider  value={{  color:'white', size: '35px' }}>
-                <FaTwitter/>
+             <a href="https://twitter.com/NutritionInteg1"><FaTwitter/> </a>  
             </IconContext.Provider>
             </div>
 

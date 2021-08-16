@@ -406,6 +406,11 @@ input:checked + .slide-container .nav label { display: block; }
             font-size: 16px !important ;
         }
     
+        .about-text{
+            width: 300px;
+            font-size: 16px !important;
+
+        }
     .about-section{
         position: relative;
         bottom: 5rem;

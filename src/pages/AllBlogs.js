@@ -16,7 +16,7 @@ const Blogs = () => {
         <div>
           <div   className="blog-container">
       
-            <h4 style={{textAlign:"center", padding: "20px"}}>Free to Access</h4>
+            <h4 style={{textAlign:"center", padding: "25px", marginLeft:'20px'}}>Free to Access</h4>
    
             <Blog/>
              <button  className="show-btn" onClick={() => setOpen(!open)} >Click to Expand</button>

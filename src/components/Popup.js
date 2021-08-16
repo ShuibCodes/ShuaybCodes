@@ -19,7 +19,7 @@ import { IconContext } from 'react-icons/lib'
     <h4 className="form-title">Contact Us</h4>
   </div>
   <div className="row body">
-    <form action="#">
+    <form  action="https://getform.io/f/f31c77eb-a795-48b5-a723-96dddc5f8953" method="POST">
       <ul className="ul">
         
         <li>
@@ -49,7 +49,7 @@ import { IconContext } from 'react-icons/lib'
      
           {/* <small>or press <strong>enter</strong></small> */}
         </li>
-        <input onClick={() => props.setTrigger(false)} className="btn btn-submit" type="Submit" value="Submit" />
+        <input  type="Submit" value="Submit" />
       </ul>
     </form>  
   </div>

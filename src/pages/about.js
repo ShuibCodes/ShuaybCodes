@@ -19,7 +19,7 @@ import logo from '../images/Brands/logo.png'
 import volac from '../images/Brands/volac-logo.png'
 import Navbar from '../components/Header'
 
-// import Footer from '../pages/Footer'
+import Footer from '../pages/Footer'
 
 function About() {
     return (
@@ -31,11 +31,11 @@ function About() {
         <div className="about-container">
 
      
-            <p className="text" >We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.
+            <p className="about-text" style={{fontSize:"24px", lineHeight:"2rem"}}  >We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.
             We are industry insiders. Fifteen years of experience working with brands, ingredient suppliers and retailers on strategy and innovation. Our tools help you get in, do better or establish where next in the market.</p>
 
 
-    
+        
         </div>
         </div>
         <div className="about-section">
@@ -91,7 +91,9 @@ function About() {
                 </div>
             </div>
         </div>
-        {/* <Footer/> */}
+        <div className="footer-dataset" >
+      <Footer/>
+      </div>
         </>
     )
 }

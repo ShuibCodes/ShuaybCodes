@@ -117,6 +117,11 @@
       .sidebar a {float: left;}
       div.content {margin-left: 0;}
     }
+    .carousel{
+      min-width: 350px;
+      margin-left: 0px;
+    
+    }
     
     @media screen and (max-width: 400px) {
       .sidebar a {
@@ -410,6 +415,10 @@
       margin-left: 5rem;
   
     }
+    .blogs-group{
+      margin: auto;
+      padding: 40px
+    }
    } 
   
    
@@ -545,11 +554,13 @@
 
   @media screen and (max-width: 760px){
     .bar-image{
-      width: 300px; 
+      min-width: 360px;
       position: relative;
-      right: 100px;
+      right: 140px;
       }
 
-
+      .infographic-section{
+        background-color: white;;
+      }
   }
 

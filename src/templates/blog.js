@@ -12,21 +12,18 @@ export const query = graphql`
 query MyQuery($slug: String) {
   contentfulLongPost(Slug: {eq: $slug}) {
     title
-    updatedAt(formatString:"MMMM Do, YYYY")
+    updatedAt(formatString: "MMMM Do, YYYY")
+  
     mainBody1 {
       mainBody1
-    }
-    mainBody2 {
-      mainBody2
-    }
-    mainBody3 {
-      mainBody3
     }
   }
 }
 
+
 `
 
+console.log(query)
 // const imageData = useStaticQuery(graphql`
 // query MyQuery {
 //   allContentfulBlogPost(sort: {fields: publishedDate, order: DESC}) {
@@ -83,14 +80,13 @@ const Blog = props => {
       src={props.data.contentfulBlogPost.image.file.url}   
       alt="alger" 
     /> */}
-   
-      
 
+    
  
  
       <h2 style={{fontSize:"50px"}} className="title">{props.data.contentfulLongPost.title}</h2>
       <Styledp>{props.data.contentfulLongPost.updatedAt}</Styledp>
-      {/* {documentToReactComponents(props.data.contentfulLongPost.mainBody1,options)} */}
+      {/* {documentToReactComponents(props.data.contentfulLongPost.mainBody1.mainBody1,options)} */}
       {/* {documentToReactComponents(props.data.contentfulLongPost.mainBody2,options)}
       {documentToReactComponents(props.data.contentfulLongPost.mainBody3,options)} */}
 
