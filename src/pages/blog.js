@@ -15,12 +15,28 @@ const BlogPage = () => {
 
     const data = useStaticQuery(graphql`
         query {
+
             allContentfulLongPost(sort: {fields: updatedAt, order: DESC}) {
                 edges {
                   node {
                     title
                     Slug
                     updatedAt(formatString:"MMMM Do, YYYY")
+
+            allContentfulBlogPost(sort: {fields: publishedDate, order: DESC}) {
+                edges {
+                  node {
+                    title
+                    slug
+                    publishedDate(formatString: "MMMM Do, YYYY")
+                  }
+                }
+                nodes {
+                  image {
+                    file {
+                      url
+                    }
+
                   }
                 }
               }
@@ -29,14 +45,40 @@ const BlogPage = () => {
 console.log(data.allContentfulLongPost.edges.map((e) => e.node.title).sort())
   
     // https://www.youtube.com/watch?v=8t0vNu2fCCM&t=12856s
+
+
+
+
+    
     return (
         <FooterLayout >
         <Helmet title="Blog" />
+
             <div className="blogs-group"  >   
   
              <ol >
                 {data.allContentfulLongPost.edges.map((edge) => {
                     return (
+
+            <div className={blogStyles.background} >   
+              
+             <ol className={blogStyles.posts}>
+             <h2 >Posts</h2>
+                {data.allContentfulBlogPost.edges.map((edge) => {
+                    return (
+                     
+                 
+                        <li className={blogStyles.post}>
+                            <Link to={`/blog/${edge.node.slug}`}>
+                                <div className={blogStyles.text}>
+                
+                                    <h2 style={{fontSize:"25px", position:"relative", top:"10px"}}  className="title" >{edge.node.title}</h2>
+                                    <p className={blogStyles.para} >{edge.node.publishedDate}</p>
+                                   
+                                </div>
+                            </Link> 
+                        </li>
+
                        
                         <div class="container-cards">
 
