@@ -88,6 +88,33 @@
     padding: 10% 0;
     
   }
+
+  .webinar-slider{
+
+    height: 100%;
+    background: #F28808;
+    padding: 10% 0;
+    
+  }
+
+  .banner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    bottom: 3rem;
+    left: 7rem;
+    gap:450px;
+  }
+  .banner-image{
+    position: relative;
+    right: 7rem;
+    bottom: 3rem;
+  }
+  .banner-slider{
+    height: 100%;
+    background: #6BA56B;
+    padding: 10% 0;
+  }
   
   .slider-image{
     width: calc( 50% + 40px );

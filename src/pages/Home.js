@@ -11,6 +11,7 @@ import '../components/HeroSection/HeroSection.css'
 // import Layout from '../components/Layouts/layout'
 import Testimonials from '../components/Testimonials'
 import Footer from '../pages/Footer'
+import WebinaCarousel from '../components/WebinarCarousel'
 function Home() {
 
 
@@ -18,7 +19,9 @@ function Home() {
         <>
         <div>
                 <Navbar/>
+                <WebinaCarousel/>
                     <section class="showcase" >
+                
         <div class="main-container grids">
             <div style={{position:"relative", bottom:"2.5rem" ,right:"5rem"}} class="showcase-text">
             <div style={{position:"relative", }} className="mainTitle"><br />
