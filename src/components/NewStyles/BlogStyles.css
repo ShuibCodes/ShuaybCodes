@@ -1,0 +1,11 @@
+.cards {
+   
+ }
+
+.card-flex{
+  position: relative;
+  right: 7rem;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
