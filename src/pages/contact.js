@@ -1,83 +1,42 @@
-import React, {useState} from "react"
-import Navbar from '../components/Header'
-import '../components/NewStyles/Resources.css'
-import Webinars from './Webinars'
-import Podcast from './Podcast'
-import Blogs from '../pages/AllBlogs'
-import {FaPodcast} from 'react-icons/fa'
-import {IoMdText} from 'react-icons/io'
-import {FaVideo} from 'react-icons/fa'
-import Footer from './Footer'
-const items = [
-     { 
-       name: <div style={{display:"flex"}}  >
-       <IoMdText/>
-       <h4 style={{position:"relative", bottom:"16px", left:"10px"}}>Blogs</h4>
-       </div>,
-       content: <Blogs />,
-   
-     },
-    //  { 
-    //    name:
-    //    <div style={{display:"flex"}} >
-    //      <FaVideo/>
-    //    <h4 style={{position:"relative", bottom:"16px", left:"10px"}} >Webinar</h4>
-    //    </div>,
-    //    content: <Webinars/>,
-      
-    //  },
-     { 
-       name: 
-       <div style={{display:"flex"}}>
-       <FaPodcast/>
-       <h4 style={{position:"relative", bottom:"16px", left:"10px"}} >Podcasts</h4>
-   
-       </div>,
-       content: <Podcast/>,
-      
-     },
-   
-   ]
-   
-     const AccordionSingle = ({name, content, icon}) => {
-       const [isOpen, setOpen] = useState(false);
-   
-       
-   
-       return (
-         <div  className="accordion-wrapper">
-           
-           <div
-          
-             className={`accordion-title ${isOpen ? "open" : ""}`}
-             onClick={() => setOpen(!isOpen)}>
-             
-             {name}
-           </div>
-           <div className={`accordion-item ${!isOpen ? "collapsed" : ""}`}>
-             <div className="accordion-content">{content}</div>
-           </div>
-         </div>
-       );
-     };
-   
+import React from "react"
+
+import Map from '../pages/Map.js'
+import  FooterLayout from '../components/Layouts/BlogLayout'
+// import pic from '../pages/ContactImage/index.jpg'
+import '/src/components/styles/custom.css'
 
 const Contact = () => {
     
    return(
-      <>
-      <Navbar/>
-      <div >
-      <div  >{items.map(d => AccordionSingle(d))}</div>
-      </div>
-
-        
-      <div className="footer-resources" >
-      <Footer/>
-      </div>
-    
+     <FooterLayout> 
+     <h1 className="contact">Get In Touch !</h1>
+     <div className="container">
+     <div className="form">
+     <div class="form-style-6">
+        <h1>Contact Us</h1>
+            <form action="https://formspree.io/f/mpzonppr" method="POST">
+            <input type="text" name="name" required placeholder="Your Name" />
+            <input type="email" name="_replyto" required placeholder="Email Address" />
+            <textarea name="message" required placeholder="Type your Message"></textarea>
+            <input type="submit" value="Send" />
+            </form>
+    </div>
+     </div>
+        <div className="details" >
+        <div className="address">
+        <span>Address:</span> <p> 151 Lordship Lane , Enfield, London, N22 1QL </p>
+        <span> PO Box : </span> <p>PO Box 789, London, N21 1AL</p>
+        <span>Telephone :</span> <p> 02081225662</p>
+        <span>Email :</span> <p>info@wingchunacademy.co.uk </p>
+        </div>
+        </div>
        
-        </>
+     </div>
+     <Map/>
+  
+
+
+     </FooterLayout>
    )
            
 }

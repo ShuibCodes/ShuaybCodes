@@ -7,8 +7,8 @@ import styled from "styled-components"
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
-      ? "#175610"
-      : "#175610"};
+      ? "#f9f9f9"
+      : "#f9f9f9"};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -19,11 +19,9 @@ export const Nav = styled.nav`
   z-index: 999;
 
 
-
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "F9F9F9" : "F9F9F9")};
     transition: 0.8s all ease;
-    
   }
 `
 
@@ -44,7 +42,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-  color:"white";
+  color: #141414;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -82,6 +80,7 @@ export const NavIcon = styled(GiHighKick)`
 
 export const MobileIcon = styled.div`
   display: none;
+
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
@@ -98,8 +97,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  color:"white";
-
    
   
 
@@ -107,59 +104,51 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     position: absolute;
     top: 80px;
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     transition: all 0.25s ease;
     background: white; 
-  color:"white";
-
   }
-
 `
 
 export const NavItem = styled.li`
   height: 80px;
   margin-right: 100px;
-  color:"white";
+  
   @media screen and (max-width: 960px) {
     width: 100%;
-  color:"white";
     
   }
 `
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled.div`
 
-  color: white;
+  color: #141414;
   display: flex;
   align-items: center;
   list-style-type:none;
   text-decoration: none;
-  padding: 0.2rem 18px;
+  padding: 0.5rem 1rem;
   height: 100%;
- font-family: sans-serif;
+ font-family: monospace;
   font-weight: 400;
+  
   text-decoration: none;
   margin-top:10px;
-  font-size: 20px;
- &:hover{
-   color:white;
- }
+  font-size: 30px;
+ 
 
 
   @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 0.3rem;
+    padding: 2rem;
     width: 100%;
     display: table;
-    color:black;
-    &:hover{
-   color:white;
- }
+
    
   }
 `
-  
+

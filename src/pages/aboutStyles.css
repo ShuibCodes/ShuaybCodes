@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+h1{
+  font-size: 65px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    padding: 0;
+    margin-top: 2rem;
+    
+    
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.5rem solid  #70c5d4;;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    padding: 3rem;
+    margin: 1rem;
+  }
+
+  #box{
+    border-color: rgb(80, 61, 134);
+  }
+  .grid-item p{
+      font-size: 20px;
+  }
+  
+
+
+@media screen and (max-width: 960px){
+  .grid-container{
+    display: block;
+  }
+
+}

@@ -9,21 +9,23 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Layout from '../components/Layouts/layout'
 import '../main.css'
 export const query = graphql`
-query MyQuery($slug: String) {
-  contentfulLongPost(Slug: {eq: $slug}) {
-    title
-    updatedAt(formatString: "MMMM Do, YYYY")
-  
-    mainBody1 {
-      mainBody1
+  query($slug: String!) {
+    contentfulBlogPost(slug: { eq: $slug }) {
+      title
+      publishedDate(formatString: "MMMM Do, YYYY")
+      body{
+        json
+      }
+      image {
+        file {
+          url
+          
+        }
+      }
     }
   }
-}
-
-
 `
 
-console.log(query)
 // const imageData = useStaticQuery(graphql`
 // query MyQuery {
 //   allContentfulBlogPost(sort: {fields: publishedDate, order: DESC}) {
@@ -70,7 +72,7 @@ const Blog = props => {
       }
   }
   
- 
+  console.log()
   return (
     <Layout>
     <Helmet title="Blog Post" />
@@ -80,16 +82,14 @@ const Blog = props => {
       src={props.data.contentfulBlogPost.image.file.url}   
       alt="alger" 
     /> */}
+   
+      
 
-    
  
  
-      <h2 style={{fontSize:"50px"}} className="title">{props.data.contentfulLongPost.title}</h2>
-      <Styledp>{props.data.contentfulLongPost.updatedAt}</Styledp>
-      {/* {documentToReactComponents(props.data.contentfulLongPost.mainBody1.mainBody1,options)} */}
-      {/* {documentToReactComponents(props.data.contentfulLongPost.mainBody2,options)}
-      {documentToReactComponents(props.data.contentfulLongPost.mainBody3,options)} */}
-
+      <h2 style={{fontSize:"50px"}} className="title">{props.data.contentfulBlogPost.title}</h2>
+      <Styledp>{props.data.contentfulBlogPost.publishedDate}</Styledp>
+      {documentToReactComponents(props.data.contentfulBlogPost.body.json,options)}
    
 
       </BlogLayout>

@@ -13,7 +13,6 @@ import {
   NavMenu,
   NavLinks
 } from "../components/NavbarElements"
-import NILogo from "./NILogo"
 
 
 const Header = () => {
@@ -44,42 +43,19 @@ const Header = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo className="logo-title"  to="/" onClick={closeMobileMenu}>
-              <h4 className="logo-title"  >
-                <NILogo/>
-              </h4>
+              <h4 className="logo-title"  >ShuaybCodes</h4>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
-              {click ? <FaTimes /> : <FaBars style={{color:"white"}} />}
+              {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
-          
-              <NavLinks to="/about" > 
-              About
-              </NavLinks>
-             
-         
             
             
-              <NavLinks to="/Features" > 
-                Products 
+              <NavItem>
+              <NavLinks to="/blog" > 
+                <h4 className="logo-title" > <a  style={{textDecoration:"none", color:"black"}} href="https://shuibabdillahi.netlify.app/"  target="_blank" rel="noopener noreferrer">Portfolio</a></h4>
               </NavLinks>
-             
-            
-              <NavLinks to="/contact" > 
-               Resources
-              </NavLinks>
-             
-            
-              <NavLinks to="/Dataset" > 
-              Dataset
-              </NavLinks>
-             
-            
-              <NavLinks to="/" > 
-               Reports
-              </NavLinks>
-             
-
+              </NavItem>
          
             </NavMenu>
           </NavbarContainer>

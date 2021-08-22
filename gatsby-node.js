@@ -11,11 +11,10 @@ module.exports.createPages = async ({graphql, actions}) =>{
     // this graphql down here is a function that returns a promise, so mark this whole function as async
     const res = await graphql(`
     query{
-        allContentfulLongPost{
+        allContentfulBlogPost{
           edges{
             node{
-              title
-              Slug
+              slug
             }
           }
         }
@@ -23,12 +22,12 @@ module.exports.createPages = async ({graphql, actions}) =>{
     
     `)
       // iterate over all the psots and run createpage function for each of them 
-      res.data.allContentfulLongPost.edges.forEach((edge) => {
+      res.data.allContentfulBlogPost.edges.forEach((edge) => {
         createPage({
             component:  blogTemplate,
-            path: `/blog/${edge.node.title}`,
+            path: `/blog/${edge.node.slug}`,
             context: {
-                slug: edge.node.Slug
+                slug: edge.node.slug
             }
         })
       })
