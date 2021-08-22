@@ -8,37 +8,24 @@ import {Helmet} from 'react-helmet'
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            allContentfulBlogPost(sort: {fields: publishedDate, order: DESC}) {
+            allContentfulBlogPost ( sort: { fields: publishedDate, order: DESC } ) {
                 edges {
-                  node {
-                    title
-                    slug
-                    publishedDate(formatString: "MMMM Do, YYYY")
-                  }
-                }
-                nodes {
-                  image {
-                    file {
-                      url
+                    node {
+                        title
+                        slug
+                        publishedDate(formatString:"MMMM Do, YYYY")
                     }
-                  }
                 }
-              }
+            }
         }
     `)
     // https://www.youtube.com/watch?v=8t0vNu2fCCM&t=12856s
-
-
-
-
-    
     return (
         <FooterLayout >
         <Helmet title="Blog" />
             <div className={blogStyles.background} >   
-              
+  
              <ol className={blogStyles.posts}>
-             <h2 >Posts</h2>
                 {data.allContentfulBlogPost.edges.map((edge) => {
                     return (
                      
@@ -46,7 +33,7 @@ const BlogPage = () => {
                         <li className={blogStyles.post}>
                             <Link to={`/blog/${edge.node.slug}`}>
                                 <div className={blogStyles.text}>
-                
+                               
                                     <h2 style={{fontSize:"25px", position:"relative", top:"10px"}}  className="title" >{edge.node.title}</h2>
                                     <p className={blogStyles.para} >{edge.node.publishedDate}</p>
                                    
