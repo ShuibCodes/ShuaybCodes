@@ -19,7 +19,12 @@ const BlogPage = () => {
             }
         }
     `)
-    // https://www.youtube.com/watch?v=8t0vNu2fCCM&t=12856s
+
+
+
+  
+
+
     return (
         <FooterLayout >
         <Helmet title="Blog" />
@@ -36,7 +41,7 @@ const BlogPage = () => {
                                
                                     <h2 style={{fontSize:"25px", position:"relative", top:"10px"}}  className="title" >{edge.node.title}</h2>
                                     <p className={blogStyles.para} >{edge.node.publishedDate}</p>
-                                   
+                                    
                                 </div>
                             </Link> 
                         </li>

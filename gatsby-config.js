@@ -14,7 +14,7 @@ require("dotenv").config({
 
 
 
-
+     
            `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
   
             

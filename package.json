@@ -32,6 +32,7 @@
     "gatsby-plugin-google-analytics": "^3.10.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.9.0",
+    "gatsby-plugin-readingtime-contentful": "^1.0.0",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-smoothscroll": "^1.2.0",
