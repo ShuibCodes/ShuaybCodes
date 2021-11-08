@@ -63,8 +63,12 @@
     "typescript": "^2.9.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
     "env-cmd": "^10.1.0",
-    "prettier": "2.1.2"
+    "gatsby-plugin-postcss": "^5.1.0",
+    "postcss": "^8.3.11",
+    "prettier": "2.1.2",
+    "tailwindcss": "^2.2.19"
   },
   "repository": {
     "type": "git",

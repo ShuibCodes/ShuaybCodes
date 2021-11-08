@@ -13,7 +13,7 @@ require("dotenv").config({
             
 
 
-
+        `gatsby-plugin-postcss`,
      
            `gatsby-plugin-sharp`, `gatsby-transformer-sharp`,
   
@@ -24,8 +24,8 @@ require("dotenv").config({
                resolve: 'gatsby-source-contentful',
              
               options: {
-                  spaceId: process.env.CONTENTFUL_SPACE_ID,
-                  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+                  spaceId:'ns6ic3hnqqep',
+                  accessToken: 'dDIeVUdKolVdP8jlmXjiNdZwwFCcYSXrxy3OMo-NXN8'
               },
              
              
@@ -34,7 +34,7 @@ require("dotenv").config({
           {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-              trackingId: process.env.GA_TRACKING_ID
+              trackingId: 'UA-198338892-1'
             }
           },
           'gatsby-plugin-sass',
