@@ -36,7 +36,7 @@ a {
 }
 .card {
   font-family: "Heebo";
-  height: 400px;
+  height: 430px;
   width: 350px;
   font-size: 1.5em;
   color: white;
@@ -64,7 +64,6 @@ a {
   top: -210px;
   color: black;
   font-size: 16px;
-
 }
 
 .blog-card p {
@@ -78,12 +77,14 @@ a {
   line-height: 1.2em;
   margin-top: 200px;
 }
-
+.intro {
+  font-size: 13px;
+}
 .card p {
   font-size: 12;
-  font-family: "Open Sans";
-  margin-top: 0.5em;
-  line-height: 2em;
+  font-family: roboto, arial, helvet;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card .tags {

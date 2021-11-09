@@ -5,6 +5,7 @@ import FooterLayout from "../components/Layouts/BlogLayout"
 import { BiRightArrowAlt } from "react-icons/bi"
 import { Helmet } from "react-helmet"
 import "../pages/blogcss.css"
+import Truncate from "react-truncate"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -12,15 +13,18 @@ const BlogPage = () => {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
+            intro {
+              intro
+            }
             title
             slug
             publishedDate(formatString: "MMMM Do, YYYY")
             image {
-                fluid {
-                  src
-                  srcSet
-                }
+              fluid {
+                src
+                srcSet
               }
+            }
           }
         }
       }
@@ -34,25 +38,33 @@ const BlogPage = () => {
         {data.allContentfulBlogPost.edges.map(edge => {
           return (
             <div class="card-grid-space">
-            <Link to={`/blog/${edge.node.slug}`}>
-              <a className="card">
-                <img
-                  className="card-image"
-                  src={edge.node?.image?.fluid?.src}
-                  alt="image"
-                />
-                <div className="blog-card">
-                  <h1>{edge.node.title}</h1>
-                  <p>
-                    The syntax of a language is how it works. How to actually
-                    write it. Learn HTML syntax…
-                  </p>
+              <Link to={`/blog/${edge.node.slug}`}>
+                <a className="card">
+                  <img
+                    className="card-image"
+                    src={edge.node?.image?.fluid?.src}
+                    alt="image"
+                  />
+                  <div className="blog-card">
+                    <h1>{edge.node.title}</h1>
+                    <p>
+                      <Truncate
+                        lines={2}
+                        ellipsis={
+                          <>
+                            ... 
+                          </>
+                        }
+                      >
+                        {edge.node.intro.intro}
+                      </Truncate>
+                    </p>
 
-                  <div class="tags">
-                    <div class="tag">{edge.node.publishedDate}</div>
+                    <div class="tags">
+                      <div class="tag">{edge.node.publishedDate}</div>
+                    </div>
                   </div>
-                </div>
-              </a>
+                </a>
               </Link>
             </div>
           )
@@ -63,16 +75,3 @@ const BlogPage = () => {
 }
 
 export default BlogPage
-
-{
-  /* <li className={blogStyles.post}>
-<Link to={`/blog/${edge.node.slug}`}>
-    <div className={blogStyles.text}>
-   
-        <h2 style={{fontSize:"25px", position:"relative", top:"10px"}}  className="title" >{edge.node.title}</h2>
-        <p className={blogStyles.para} >{edge.node.publishedDate}</p>
-        
-    </div>
-</Link> 
-</li> */
-}
