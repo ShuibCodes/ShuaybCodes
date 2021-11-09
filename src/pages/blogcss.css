@@ -61,7 +61,7 @@ a {
 
 .blog-card {
   position: relative;
-  top: -210px;
+  top: -215px;
   color: black;
   font-size: 16px;
 }
@@ -75,7 +75,8 @@ a {
   margin: 0;
   font-size: 14px;
   line-height: 1.2em;
-  margin-top: 200px;
+  margin-top: 220px;
+  
 }
 .intro {
   font-size: 13px;
@@ -90,26 +91,18 @@ a {
 .card .tags {
   display: flex;
   position: relative;
-  top: 10px;
+  top: 5px;
   padding-bottom: 20px;
 }
 
-.card .tags .tag {
-  font-size: 0.75em;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 0.3rem;
-  padding: 0 0.5em;
-  margin-right: 0.5em;
-  line-height: 1.5em;
-  transition: all, var(--transition-time);
-}
+
 
 .card .date {
   position: absolute;
   top: 0;
   right: 0;
   font-size: 0.75em;
-  padding: 1em;
+  padding: 0.3em;
   line-height: 1em;
   opacity: 0.8;
 }
