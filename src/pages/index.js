@@ -6,7 +6,7 @@ import Layout from '../components/Layouts/layout'
 import Head from '../components/head'
 
 import Blog from '../pages/blog'
-import shuib from '../image/shuib.jpeg'
+import shuib from '../../src/Image/shuib.jpeg'
 import "../pages/blogcss.css"
 
 const Index = () =>{
