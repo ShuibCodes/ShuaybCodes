@@ -1,73 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poppins:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poppins:ital@1&display=swap");
 
-.title{
-    font-family: 'Poppins', sans-serif;
-    
+.title {
+  font-family: "Poppins", sans-serif;
 }
 
+h2 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
-
-@media screen and (max-width: 960px){
-  .title{
-      font-size: 25px !important;
+@media screen and (max-width: 960px) {
+  .title {
+    font-size: 25px !important;
   }
 
-  h2{
-    font-size: 20px
+  h2 {
+    font-size: 27px !important;
+    font-weight: 600 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap");
 
-.logo-title{
-    font-family: 'Jost', sans-serif;
+.logo-title {
+  font-family: "Jost", sans-serif;
+  font-size: 26px;
 }
 
-a{
-    list-style-type: none;
+a {
+  list-style-type: none;
 }
 
-a:hover{
-    text-decoration: none !important;
+a:hover {
+  text-decoration: none !important;
 }
 
-
-
-.about-me{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
 }
-.posts{
+.posts {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  width: 700px;
+  text-align: left;
+  line-height: 2.2rem;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 760px) {
+  .about-me {
+    padding: 5%;
+    display:block;
+  }
+  .about-text {
     margin-top: 30px;
-    text-align: center;
-
-}
-
-.about-text{
-
-    font-size: 25px;    
-    font-family: 'Poppins', sans-serif;
-   width: 1000px;
-   text-align:center;
-    line-height: 2.8rem;
-
-    
-}
-
-@media screen and (max-width: 760px){
-    .about-me{
-        padding: 5% ;
-        
-    }
-    .about-text{
-        margin-top: 30px;
-      font-size: 18px;
-      width: auto;
-      font-family: 'Poppins', sans-serif;
-      line-height: 2.3rem;
-    }
-    
+    font-size: 18px;
+    width: auto;
+    font-family: "Poppins", sans-serif;
+    line-height: 2.3rem;
   }
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+
+  .shuib{
+      position: relative;
+      left: 6rem;
+  }
+}
+

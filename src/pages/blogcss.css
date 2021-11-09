@@ -30,8 +30,9 @@ a {
   margin: 0 auto;
   width: max-content;
 }
-.card-image{
-    border-radius: 5px;
+.card-image {
+  border-radius: 5px;
+  height: 200px;
 }
 .card {
   font-family: "Heebo";
@@ -54,19 +55,22 @@ a {
   text-decoration: none;
 }
 
+.shuib {
+  border-radius: 50px;
+}
+
 .blog-card {
   position: relative;
-  top: -200px;
+  top: -210px;
   color: black;
   font-size: 16px;
-  
+
 }
 
-.blog-card p{
-    font-size: 14px;
-    line-height: 1rem !important;
+.blog-card p {
+  font-size: 14px;
+  line-height: 1rem !important;
 }
-
 
 .card h1 {
   margin: 0;
@@ -85,7 +89,8 @@ a {
 .card .tags {
   display: flex;
   position: relative;
-  top: 20px;
+  top: 10px;
+  padding-bottom: 20px;
 }
 
 .card .tags .tag {
@@ -97,9 +102,6 @@ a {
   line-height: 1.5em;
   transition: all, var(--transition-time);
 }
-
-
-
 
 .card .date {
   position: absolute;
@@ -136,10 +138,6 @@ a {
   width: 200%;
   height: 200%;
 }
-
-
-
-
 
 .card-grid-space .num {
   font-size: 3em;
