@@ -90,7 +90,8 @@ const Blog = props => {
   return (
     <Layout>
       <Helmet title="Blog Post" />
-      <BlogLayout>
+
+      <div className="page-container">
         {/* <Img fluid={imageData.file.fluid} alt="image"/> */}
         {/* <LazyLoadImage height={200} width={200}
       src={props.data.contentfulBlogPost.image.file.url}   
@@ -101,14 +102,14 @@ const Blog = props => {
           {props.data.contentfulBlogPost.title}
         </h2>
         <Styledp>{props.data.contentfulBlogPost.publishedDate}</Styledp>
-        <Styledp style={{ position: "relative", bottom: "1rem" }}>
+        <Styledp style={{ position: "relative", bottom: "0.4rem" }}>
           {readingTime(text)}
         </Styledp>
         {documentToReactComponents(
           props.data.contentfulBlogPost.body.json,
           options
         )}
-      </BlogLayout>
+      </div>
     </Layout>
   )
 }
