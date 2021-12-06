@@ -22,8 +22,9 @@ export const query = graphql`
         json
       }
       image {
-        file {
-          url
+        fluid {
+          src
+          srcSet
         }
       }
     }
@@ -89,14 +90,14 @@ const Blog = props => {
   console.log(text)
   return (
     <Layout>
-      <Helmet title="Blog Post" />
+      <Helmet>
+      
+      <meta property="og:title" content={props.data.contentfulBlogPost.title} />
+      <meta property="og:image" content={props.data.contentfulBlogPost.image.fluid.src} />
+      </Helmet>
 
       <div className="page-container">
-        {/* <Img fluid={imageData.file.fluid} alt="image"/> */}
-        {/* <LazyLoadImage height={200} width={200}
-      src={props.data.contentfulBlogPost.image.file.url}   
-      alt="alger" 
-    /> */}
+     
 
         <h2 style={{ fontSize: "50px" }} className="title">
           {props.data.contentfulBlogPost.title}
