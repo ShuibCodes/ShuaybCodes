@@ -94,6 +94,7 @@ const Blog = props => {
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="twitter:title" content={props.data.contentfulBlogPost.title}/>
       <meta name="twitter:image" content={props.data.contentfulBlogPost.image.fluid.src}/>
+      
       <meta property="og:title" content={props.data.contentfulBlogPost.title} />
       <meta property="og:image" content={props.data.contentfulBlogPost.image.fluid.src} />
       </Helmet>
